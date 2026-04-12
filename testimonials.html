@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Client reviews and case studies for NP Trigunayat Systems. See how we helped businesses double revenue, rank #1 on Google, and build apps users love." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials — NP Trigunayat Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="sources/style.css" />
+
+  <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+  <style>
+    /* ══════════════════════════════════════════════════════
+   TESTIMONIALS — ENHANCED v2
+══════════════════════════════════════════════════════ */
+
+    /* ── Metrics marquee ── */
+    .tm-metrics-strip {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+      background: linear-gradient(90deg, rgba(124, 58, 237, .04), transparent, rgba(236, 72, 153, .03), transparent);
+    }
+
+    .tm-metrics-track {
+      display: flex;
+      animation: tm-marquee 34s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+
+    .tm-metrics-strip:hover .tm-metrics-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes tm-marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .tm-metric-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 32px;
+      border-right: 1px solid var(--border);
+    }
+
+    .tm-chip-num {
+      font-family: var(--font-head);
+      font-size: 1.25rem;
+      font-weight: 800;
+      background: linear-gradient(120deg, var(--text) 30%, var(--lavender));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+
+    .tm-chip-num.pk {
+      background: linear-gradient(120deg, var(--text) 20%, var(--pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tm-chip-label {
+      font-family: var(--font-head);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .tm-chip-sep {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--lavender);
+      opacity: .28;
+      flex-shrink: 0;
+    }
+
+    /* ── Social-proof avatar cluster ── */
+    .tm-trust-strip {
+      padding: 40px 0 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tm-trust-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .tm-avatars {
+      display: flex;
+      align-items: center;
+    }
+
+    .tm-av {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: .72rem;
+      color: #fff;
+      margin-left: -10px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tm-av:first-child {
+      margin-left: 0;
+      z-index: 6;
+    }
+
+    .tm-av:nth-child(2) {
+      z-index: 5;
+    }
+
+    .tm-av:nth-child(3) {
+      z-index: 4;
+    }
+
+    .tm-av:nth-child(4) {
+      z-index: 3;
+    }
+
+    .tm-av:nth-child(5) {
+      z-index: 2;
+    }
+
+    .tm-av--more {
+      background: var(--surface2);
+      border-color: var(--border);
+      font-size: .62rem;
+      color: var(--muted);
+    }
+
+    .tm-trust-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .tm-trust-text strong {
+      font-family: var(--font-head);
+      font-size: .9rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .tm-trust-text span {
+      font-size: .78rem;
+      color: var(--muted);
+    }
+
+    .tm-trust-divider {
+      width: 1px;
+      height: 36px;
+      background: var(--border);
+    }
+
+    .tm-trust-stat {
+      text-align: center;
+    }
+
+    .tm-trust-stat strong {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--text) 30%, var(--lavender));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+
+    .tm-trust-stat span {
+      font-size: .68rem;
+      font-family: var(--font-head);
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 3px;
+      display: block;
+    }
+
+    /* ── Review filter pills ── */
+    .tm-rev-filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      padding-top: 8px;
+    }
+
+    .tm-rev-pill {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .22s ease;
+      background: transparent;
+    }
+
+    .tm-rev-pill:hover {
+      border-color: var(--border-hi);
+      color: var(--text);
+    }
+
+    .tm-rev-pill.active {
+      background: rgba(124, 58, 237, .14);
+      border-color: rgba(124, 58, 237, .5);
+      color: var(--lavender);
+      box-shadow: 0 0 14px rgba(124, 58, 237, .12);
+    }
+
+    /* ══════════════════════════════════════════════════════
+   TRUE MASONRY GRID — CSS Grid + JS span calculation
+   Cards flow left-to-right (not top-to-bottom like columns)
+══════════════════════════════════════════════════════ */
+    .tm-reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1px;
+      column-gap: 20px;
+      row-gap: 0;
+      align-items: start;
+    }
+
+    /* ══════════════════════════════════════════════════════
+   ENHANCED REVIEW CARD
+══════════════════════════════════════════════════════ */
+    .review-card {
+      position: relative;
+      padding: 26px 24px 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform .28s cubic-bezier(.22, 1, .36, 1),
+        box-shadow .28s ease,
+        border-color .28s ease;
+      margin-bottom: 20px;
+
+      /* Accent bar on left edge — category coloured via data attr */
+      border-left: 3px solid transparent;
+    }
+
+    /* Category colour accent */
+    .review-card[data-rev~="web"] {
+      border-left-color: rgba(124, 58, 237, .55);
+    }
+
+    .review-card[data-rev~="mobile"] {
+      border-left-color: rgba(236, 72, 153, .55);
+    }
+
+    .review-card[data-rev~="seo"] {
+      border-left-color: rgba(52, 211, 153, .55);
+    }
+
+    .review-card[data-rev~="maintenance"] {
+      border-left-color: rgba(251, 191, 36, .55);
+    }
+
+    /* Large decorative quote watermark */
+    .review-card::before {
+      content: '\201C';
+      position: absolute;
+      top: -18px;
+      right: 16px;
+      font-size: 130px;
+      font-family: Georgia, serif;
+      line-height: 1;
+      pointer-events: none;
+      color: var(--lavender);
+      opacity: .045;
+      transition: opacity .28s ease, transform .28s ease;
+    }
+
+    .review-card[data-rev~="mobile"]::before {
+      color: var(--pink);
+    }
+
+    .review-card[data-rev~="seo"]::before {
+      color: #34d399;
+    }
+
+    .review-card[data-rev~="maintenance"]::before {
+      color: #fbbf24;
+    }
+
+    /* Subtle inner glow on surface */
+    .review-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(124, 58, 237, .05) 0%, transparent 70%);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .28s ease;
+    }
+
+    .review-card[data-rev~="mobile"]::after {
+      background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(236, 72, 153, .06) 0%, transparent 70%);
+    }
+
+    .review-card[data-rev~="seo"]::after {
+      background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(52, 211, 153, .06) 0%, transparent 70%);
+    }
+
+    .review-card[data-rev~="maintenance"]::after {
+      background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(251, 191, 36, .06) 0%, transparent 70%);
+    }
+
+    /* Hover state */
+    .review-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(124, 58, 237, .28);
+      box-shadow:
+        0 0 0 1px rgba(124, 58, 237, .2),
+        0 16px 48px rgba(0, 0, 0, .35),
+        0 0 30px rgba(124, 58, 237, .07);
+    }
+
+    .review-card[data-rev~="mobile"]:hover {
+      border-color: rgba(236, 72, 153, .3);
+      box-shadow: 0 0 0 1px rgba(236, 72, 153, .22), 0 16px 48px rgba(0, 0, 0, .35), 0 0 30px rgba(236, 72, 153, .07);
+    }
+
+    .review-card[data-rev~="seo"]:hover {
+      border-color: rgba(52, 211, 153, .3);
+      box-shadow: 0 0 0 1px rgba(52, 211, 153, .22), 0 16px 48px rgba(0, 0, 0, .35), 0 0 30px rgba(52, 211, 153, .07);
+    }
+
+    .review-card[data-rev~="maintenance"]:hover {
+      border-color: rgba(251, 191, 36, .3);
+      box-shadow: 0 0 0 1px rgba(251, 191, 36, .22), 0 16px 48px rgba(0, 0, 0, .35), 0 0 30px rgba(251, 191, 36, .07);
+    }
+
+    .review-card:hover::before {
+      opacity: .085;
+      transform: scale(1.04) translateY(-4px);
+    }
+
+    .review-card:hover::after {
+      opacity: 1;
+    }
+
+    /* Featured card extra polish */
+    .tm-review-featured {
+      border-color: rgba(124, 58, 237, .3) !important;
+      border-left-color: rgba(124, 58, 237, .7) !important;
+      background: linear-gradient(155deg,
+          rgba(124, 58, 237, .07) 0%,
+          rgba(14, 14, 26, .97) 55%) !important;
+    }
+
+    .tm-review-featured blockquote {
+      font-size: 1rem !important;
+      line-height: 1.65 !important;
+    }
+
+    /* Card reveal animation */
+    .review-card {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: transform .28s cubic-bezier(.22, 1, .36, 1),
+        box-shadow .28s ease,
+        border-color .28s ease,
+        opacity .4s ease;
+    }
+
+    .review-card.card-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px) !important;
+    }
+
+    /* ── Card meta row ── */
+    .rev-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    /* ── Service badge ── */
+    .rev-source {
+      display: inline-flex;
+      align-items: center;
+      font-family: var(--font-head);
+      font-size: .57rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 100px;
+      background: rgba(124, 58, 237, .09);
+      border: 1px solid rgba(124, 58, 237, .22);
+      color: var(--lavender);
+      flex-shrink: 0;
+    }
+
+    .rev-source--mobile {
+      color: var(--pink);
+      border-color: rgba(236, 72, 153, .28);
+      background: rgba(236, 72, 153, .08);
+    }
+
+    .rev-source--seo {
+      color: #34d399;
+      border-color: rgba(52, 211, 153, .28);
+      background: rgba(52, 211, 153, .08);
+    }
+
+    .rev-source--maint {
+      color: #fbbf24;
+      border-color: rgba(251, 191, 36, .28);
+      background: rgba(251, 191, 36, .08);
+    }
+
+    /* ── Industry tag ── */
+    .rev-industry {
+      font-family: var(--font-head);
+      font-size: .57rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      opacity: .75;
+    }
+
+    /* ── Verified badge ── */
+    .rev-verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: var(--font-head);
+      font-size: .58rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: #34d399;
+    }
+
+    .rev-verified::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 7px rgba(52, 211, 153, .7);
+      flex-shrink: 0;
+    }
+
+    /* ── Stars ── */
+    .review-card .stars {
+      font-size: .9rem;
+      letter-spacing: 2px;
+      color: #fbbf24;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    /* ── Blockquote ── */
+    .review-card blockquote {
+      font-size: .875rem;
+      line-height: 1.7;
+      color: var(--text);
+      opacity: .88;
+      margin: 0 0 0 0;
+      padding: 0;
+      position: relative;
+      font-style: normal;
+      font-family: var(--font-body, 'Outfit', sans-serif);
+    }
+
+    /* ── Result highlight chip — enhanced ── */
+    .rev-result {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 10px 14px;
+      background: rgba(124, 58, 237, .07);
+      border: 1px solid rgba(124, 58, 237, .18);
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Accent line on left of result chip */
+    .rev-result::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--lavender), rgba(124, 58, 237, .3));
+      border-radius: 2px 0 0 2px;
+    }
+
+    .rev-result strong {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--lavender);
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    .rev-result span {
+      font-size: .73rem;
+      color: var(--muted);
+      font-family: var(--font-head);
+      line-height: 1.35;
+    }
+
+    .rev-result--pk {
+      background: rgba(236, 72, 153, .07);
+      border-color: rgba(236, 72, 153, .18);
+    }
+
+    .rev-result--pk::before {
+      background: linear-gradient(180deg, var(--pink), rgba(236, 72, 153, .3));
+    }
+
+    .rev-result--pk strong {
+      color: var(--pink);
+    }
+
+    .rev-result--gr {
+      background: rgba(52, 211, 153, .07);
+      border-color: rgba(52, 211, 153, .18);
+    }
+
+    .rev-result--gr::before {
+      background: linear-gradient(180deg, #34d399, rgba(52, 211, 153, .3));
+    }
+
+    .rev-result--gr strong {
+      color: #34d399;
+    }
+
+    .rev-result--am {
+      background: rgba(251, 191, 36, .07);
+      border-color: rgba(251, 191, 36, .18);
+    }
+
+    .rev-result--am::before {
+      background: linear-gradient(180deg, #fbbf24, rgba(251, 191, 36, .3));
+    }
+
+    .rev-result--am strong {
+      color: #fbbf24;
+    }
+
+    /* ── Reviewer row ── */
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .rev-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(124, 58, 237, .5), rgba(124, 58, 237, .2));
+      border: 1.5px solid rgba(124, 58, 237, .3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 800;
+      color: var(--lavender);
+      flex-shrink: 0;
+      letter-spacing: .02em;
+    }
+
+    .reviewer>div:not(.rev-avatar) strong {
+      display: block;
+      font-family: var(--font-head);
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .reviewer>div:not(.rev-avatar) span {
+      font-size: .72rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    /* Project link */
+    .rev-project-link {
+      margin-left: auto;
+      font-family: var(--font-head);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--lavender);
+      text-decoration: none;
+      opacity: .7;
+      transition: opacity .2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .rev-project-link:hover {
+      opacity: 1;
+    }
+
+    .review-card[data-rev~="mobile"] .rev-project-link {
+      color: var(--pink);
+    }
+
+    .review-card[data-rev~="seo"] .rev-project-link {
+      color: #34d399;
+    }
+
+    .review-card[data-rev~="maintenance"] .rev-project-link {
+      color: #fbbf24;
+    }
+
+    /* Hero featured CTA button inside card */
+    .rev-cta-btn {
+      margin-left: auto;
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(124, 58, 237, .4);
+      color: var(--lavender);
+      text-decoration: none;
+      transition: all .2s;
+      flex-shrink: 0;
+      background: rgba(124, 58, 237, .08);
+    }
+
+    .rev-cta-btn:hover {
+      background: rgba(124, 58, 237, .18);
+      border-color: rgba(124, 58, 237, .6);
+    }
+
+    /* ── Case study enhancements ── */
+    .tm-cs-ba {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 28px 0;
+    }
+
+    .tm-cs-ba-row {
+      display: grid;
+      grid-template-columns: 90px 1fr 90px;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .tm-cs-ba-label {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    .tm-cs-ba-label.after {
+      text-align: right;
+      color: var(--lavender);
+    }
+
+    .tm-cs-ba-label.after.pk {
+      color: var(--pink);
+    }
+
+    .tm-cs-ba-label.after.gr {
+      color: #34d399;
+    }
+
+    .tm-cs-ba-bar-wrap {
+      height: 6px;
+      background: rgba(255, 255, 255, .06);
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tm-cs-ba-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 3px;
+      width: 0;
+      transition: width 1.2s cubic-bezier(.22, 1, .36, 1);
+      background: linear-gradient(90deg, var(--purple), var(--lavender));
+    }
+
+    .tm-cs-ba-bar.pk {
+      background: linear-gradient(90deg, var(--pink), #f472b6);
+    }
+
+    .tm-cs-ba-bar.gr {
+      background: linear-gradient(90deg, #059669, #34d399);
+    }
+
+    .tm-cs-timeline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-top: 24px;
+    }
+
+    .tm-cs-timeline::before {
+      content: '⏱';
+      font-size: .75rem;
+    }
+
+    .tm-cs-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .tm-cs-cta-note {
+      font-size: .75rem;
+      color: var(--muted);
+      font-family: var(--font-head);
+    }
+
+    /* ── Responsive ── */
+    @media(max-width: 1024px) {
+      .tm-reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 900px) {
+      .tm-trust-inner {
+        gap: 20px;
+      }
+
+      .tm-trust-divider {
+        display: none;
+      }
+
+      .tm-cs-ba-row {
+        grid-template-columns: 70px 1fr 70px;
+      }
+    }
+
+    @media(max-width: 640px) {
+      .tm-tab-btn {
+        padding: 18px 20px;
+      }
+
+      .tm-tab-nav-cont {
+        padding: 0;
+      }
+
+      .tm-reviews-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+      }
+
+      /* Reset any column-spanning — everything stacks full-width on mobile */
+      .tm-reviews-grid .review-card {
+        grid-column: 1 / -1 !important;
+        margin-bottom: 16px;
+      }
+
+      .tm-trust-inner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .tm-avatars {
+        justify-content: center;
+      }
+
+      .tm-cs-cta-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .tm-cs-cta-row .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="NP Trigunayat Systems Logo" />
+        <span class="logo-text">NP <span class="logo-accent">Trigunayat</span> Systems</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html" class="active">Testimonials</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk →</a>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="testimonials.html" class="active-mobile">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="btn btn-primary mob-cta">Let's Talk →</a>
+  </div>
+
+  <div id="page-testimonials">
+
+    <!-- ══════ HERO ══════ -->
+    <section class="tm-hero" id="section-hero">
+      <div class="tm-hero-glow-a"></div>
+      <div class="tm-hero-glow-b"></div>
+      <div class="tm-hero-scan"></div>
+      <div class="container">
+        <div class="tm-hero-inner">
+
+          <div class="tm-hero-left">
+            <div class="c-eyebrow" id="tm-eyebrow">
+              <div class="c-eyebrow-dot"></div>
+              <span class="c-eyebrow-text">Social Proof</span>
+              <div class="c-eyebrow-line"></div>
+            </div>
+            <h1 class="c-headline">
+              <span class="c-hl-row" id="tm-hl0"><span class="c-hl-inner">PROOF</span></span>
+              <span class="c-hl-row" id="tm-hl1"><span class="c-hl-inner outline">IN THE</span></span>
+              <span class="c-hl-row" id="tm-hl2"><span class="c-hl-inner grad">RESULTS.</span></span>
+            </h1>
+            <p class="tm-hero-sub" id="tm-sub">Real feedback from real clients — and the full stories behind the
+              numbers. No curated fluff, no cherry-picked stats. Just what actually happened, in the client's own words.
+            </p>
+            <div class="tm-hero-meta" id="tm-meta">
+              <div class="tm-hero-meta-item">
+                <span class="tm-stars">★★★★★</span>
+                <span>100% five-star reviews</span>
+              </div>
+              <div class="tm-meta-divider"></div>
+              <div class="tm-hero-meta-item"><span>50+ projects delivered</span></div>
+              <div class="tm-meta-divider"></div>
+              <div class="tm-hero-meta-item"><span>98% satisfaction rate</span></div>
+            </div>
+          </div>
+
+          <!-- Featured pull-quote card -->
+          <div class="tm-hero-quote" id="tm-quote">
+            <div class="tm-fquote-mark">"</div>
+            <blockquote class="tm-fquote-text">Working with NP Trigunayat Systems was the best investment we made for
+              our business. The website is fast, stunning, and our leads doubled within 60 days of launch.</blockquote>
+            <div class="tm-fquote-author">
+              <div class="tm-fquote-avatar">RK</div>
+              <div>
+                <div class="tm-stars">★★★★★</div>
+                <strong>Rajesh Kumar</strong>
+                <span>Founder, KumarKart — Delhi</span>
+              </div>
+            </div>
+            <div
+              style="display:flex;align-items:center;gap:10px;margin-top:20px;padding-top:16px;border-top:1px solid var(--border);">
+              <span class="rev-source">Web Project</span>
+              <span class="rev-verified">Verified Client</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ SOCIAL PROOF TRUST STRIP ══════ -->
+    <div class="tm-trust-strip" id="section-trust">
+      <div class="container">
+        <div class="tm-trust-inner">
+          <div class="tm-avatars">
+            <div class="tm-av" style="background:linear-gradient(135deg,#7C3AED,#5b21b6);">RK</div>
+            <div class="tm-av" style="background:linear-gradient(135deg,#EC4899,#be185d);">PS</div>
+            <div class="tm-av" style="background:linear-gradient(135deg,#059669,#34d399);">DM</div>
+            <div class="tm-av" style="background:linear-gradient(135deg,#2563EB,#60a5fa);">AV</div>
+            <div class="tm-av" style="background:linear-gradient(135deg,#d97706,#fbbf24);">SJ</div>
+            <div class="tm-av tm-av--more">+45</div>
+          </div>
+          <div class="tm-trust-text">
+            <strong>Trusted by 50+ businesses</strong>
+            <span>across Lucknow, Delhi, Mumbai, Pune & Bangalore</span>
+          </div>
+          <div class="tm-trust-divider"></div>
+          <div class="tm-trust-stat">
+            <strong>★★★★★</strong>
+            <span>Average Rating</span>
+          </div>
+          <div class="tm-trust-divider"></div>
+          <div class="tm-trust-stat">
+            <strong>48hr</strong>
+            <span>Avg. Response Time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════ RESULTS METRICS MARQUEE ══════ -->
+    <div class="tm-metrics-strip" id="section-metrics" style="margin-top:40px;">
+      <div class="tm-metrics-track" id="tm-metrics-track"></div>
+    </div>
+
+    <!-- ══════ STICKY TABS ══════ -->
+    <nav class="tm-tab-nav" id="section-tabs">
+      <div class="container tm-tab-nav-cont">
+        <div class="tm-tab-inner">
+          <button type="button" class="tm-tab-btn active" onclick="switchTestiTab(this,'reviews')">
+            Client Reviews <span class="tm-tab-count">9</span>
+          </button>
+          <button type="button" class="tm-tab-btn" onclick="switchTestiTab(this,'case-studies')">
+            Case Studies <span class="tm-tab-count">4</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ══════ REVIEWS PANEL ══════ -->
+    <div class="testi-panel active" id="panel-reviews">
+      <section class="section tm-reviews-section" id="section-reviews">
+        <div class="container">
+
+          <!-- Filter pills -->
+          <div class="tm-rev-filters">
+            <button class="tm-rev-pill active" onclick="filterReviews(this,'all')">All</button>
+            <button class="tm-rev-pill" onclick="filterReviews(this,'web')">Web Dev</button>
+            <button class="tm-rev-pill" onclick="filterReviews(this,'mobile')">Mobile Apps</button>
+            <button class="tm-rev-pill" onclick="filterReviews(this,'seo')">SEO</button>
+            <button class="tm-rev-pill" onclick="filterReviews(this,'maintenance')">Maintenance</button>
+          </div>
+
+          <!-- ══ MASONRY GRID ══ -->
+          <div class="tm-reviews-grid" id="reviews-grid">
+
+            <!-- 1 · KumarKart · FEATURED -->
+            <div class="review-card tm-review-featured" id="review-kumarkart" data-rev="web">
+              <div class="rev-card-meta">
+                <span class="rev-source">Web Project</span>
+                <span class="rev-industry">E-Commerce · Web Dev</span>
+                <span class="rev-verified" style="margin-left:auto;">Verified Client</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"Working with NP Trigunayat Systems was the best investment we made for our business. The
+                website is fast, stunning, and our leads doubled within 60 days of launch. Nainabh understood exactly
+                what we needed and delivered beyond expectation. Highly recommended to anyone serious about growing
+                online."</blockquote>
+              <div class="rev-result">
+                <strong>2× Leads</strong>
+                <span>within 60 days of launch</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar">RK</div>
+                <div>
+                  <strong>Rajesh Kumar</strong>
+                  <span>Founder, KumarKart — Delhi</span>
+                </div>
+                <a href="contact.html?project=fashion-ecommerce" class="rev-cta-btn">Get This Result →</a>
+              </div>
+            </div>
+
+            <!-- 2 · SpiceRoute · Mobile -->
+            <div class="review-card" id="review-spiceroute" data-rev="mobile">
+              <div class="rev-card-meta">
+                <span class="rev-source rev-source--mobile">App Build</span>
+                <span class="rev-industry">Food & Beverage · App</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"The mobile app exceeded every expectation. Our customers love using it and the order process
+                has never been smoother. Commission savings alone paid for the project within 3 months."</blockquote>
+              <div class="rev-result rev-result--am">
+                <strong>28% Less</strong>
+                <span>commission costs — paid for itself in 3 months</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar"
+                  style="background:linear-gradient(135deg,rgba(236,72,153,.5),rgba(236,72,153,.15));border-color:rgba(236,72,153,.3);color:var(--pink);">
+                  PS</div>
+                <div>
+                  <strong>Priya Sharma</strong>
+                  <span>Owner, SpiceRoute — Mumbai</span>
+                </div>
+                <a href="contact.html?project=restaurant-app" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 3 · HealthFirst · SEO -->
+            <div class="review-card" id="review-healthfirst" data-rev="seo">
+              <div class="rev-card-meta">
+                <span class="rev-source rev-source--seo">SEO Campaign</span>
+                <span class="rev-industry">Healthcare · SEO</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"The SEO work they did for our clinic was transformational. We went from page 3 to position 1
+                for our key searches. Appointments are up 300%. I was sceptical, but the results speak for themselves."
+              </blockquote>
+              <div class="rev-result rev-result--gr">
+                <strong>+300%</strong>
+                <span>organic appointments — page 3 → #1</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar"
+                  style="background:linear-gradient(135deg,rgba(52,211,153,.45),rgba(52,211,153,.12));border-color:rgba(52,211,153,.3);color:#34d399;">
+                  DM</div>
+                <div>
+                  <strong>Dr. Anil Mehta</strong>
+                  <span>Director, HealthFirst Clinic — Varanasi</span>
+                </div>
+                <a href="contact.html?project=healthcare-seo" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 4 · Arrow Properties · Web -->
+            <div class="review-card" id="review-arrow-properties" data-rev="web maintenance">
+              <div class="rev-card-meta">
+                <span class="rev-source">Web Project</span>
+                <span class="rev-industry">Real Estate · Web Dev</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"We needed a complex real estate portal built quickly. They delivered a beautiful, functional
+                site in 6 weeks flat. The attention to detail — from the map search to the agent portal — was
+                incredible."</blockquote>
+              <div class="rev-result">
+                <strong>6 Weeks</strong>
+                <span>full portal — map, agents & leads</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar">RT</div>
+                <div>
+                  <strong>Ravi T.</strong>
+                  <span>CEO, Arrow Properties — Lucknow</span>
+                </div>
+                <a href="contact.html?project=real-estate" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 5 · TechNova · Maintenance -->
+            <div class="review-card" id="review-technova" data-rev="maintenance">
+              <div class="rev-card-meta">
+                <span class="rev-source rev-source--maint">Care Plan</span>
+                <span class="rev-industry">SaaS · Maintenance</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"Our maintenance plan with NP Trigunayat has been seamless. Any issue is fixed same-day,
+                updates are handled proactively, and the site has had zero downtime in 18 months. Total peace of mind."
+              </blockquote>
+              <div class="rev-result rev-result--gr">
+                <strong>0 Downtime</strong>
+                <span>in 18 months on maintenance plan</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar"
+                  style="background:linear-gradient(135deg,rgba(251,191,36,.45),rgba(251,191,36,.12));border-color:rgba(251,191,36,.3);color:#fbbf24;">
+                  NK</div>
+                <div>
+                  <strong>Neha Kapoor</strong>
+                  <span>Marketing Head, TechNova — Noida</span>
+                </div>
+                <a href="contact.html?project=maintenance" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 6 · Luminary Coaching · Web -->
+            <div class="review-card" id="review-luminary" data-rev="web">
+              <div class="rev-card-meta">
+                <span class="rev-source">Web Project</span>
+                <span class="rev-industry">Education · Web Dev</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"Our enquiry volume tripled after the new website launched. The booking system works
+                flawlessly, and we finally look as professional as we operate. Every detail was thought through — no
+                shortcuts."</blockquote>
+              <div class="rev-result">
+                <strong>3× Enquiries</strong>
+                <span>online booking live from day one</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar">IG</div>
+                <div>
+                  <strong>Ishaan Gupta</strong>
+                  <span>Director, Luminary Coaching — Lucknow</span>
+                </div>
+                <a href="contact.html?project=education-web" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 7 · SwiftGo · Mobile -->
+            <div class="review-card" id="review-swiftgo" data-rev="mobile">
+              <div class="rev-card-meta">
+                <span class="rev-source rev-source--mobile">App Build</span>
+                <span class="rev-industry">Logistics · Mobile App</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"The delivery tracking app transformed how we operate. Drivers love it, customers love the
+                live updates, and failed deliveries dropped by nearly half. The build quality and the post-launch
+                support have been outstanding."</blockquote>
+              <div class="rev-result rev-result--pk">
+                <strong>↓46% Failures</strong>
+                <span>live tracking launched across the fleet</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar"
+                  style="background:linear-gradient(135deg,rgba(236,72,153,.5),rgba(236,72,153,.15));border-color:rgba(236,72,153,.3);color:var(--pink);">
+                  KN</div>
+                <div>
+                  <strong>Kabir Nair</strong>
+                  <span>Founder, SwiftGo Deliveries — Bengaluru</span>
+                </div>
+                <a href="contact.html?project=logistics-app" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 8 · Bloom Interiors · SEO -->
+            <div class="review-card" id="review-bloom-interiors" data-rev="seo">
+              <div class="rev-card-meta">
+                <span class="rev-source rev-source--seo">SEO Campaign</span>
+                <span class="rev-industry">Interior Design · SEO</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"I went from zero digital presence to ranking for 12 high-intent keywords in our city. Sixty
+                percent of our new business now comes from the website. The team is transparent, thorough, and actually
+                delivers what they promise."</blockquote>
+              <div class="rev-result rev-result--gr">
+                <strong>12 Keywords</strong>
+                <span>top 3 positions · 60% of new leads organic</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar"
+                  style="background:linear-gradient(135deg,rgba(52,211,153,.45),rgba(52,211,153,.12));border-color:rgba(52,211,153,.3);color:#34d399;">
+                  MJ</div>
+                <div>
+                  <strong>Meera Joshi</strong>
+                  <span>Owner, Bloom Interiors — Pune</span>
+                </div>
+                <a href="contact.html?project=interior-seo" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 9 · BuildFlow SaaS · Web -->
+            <div class="review-card" id="review-buildflow" data-rev="web">
+              <div class="rev-card-meta">
+                <span class="rev-source">Web Project</span>
+                <span class="rev-industry">SaaS · Web Dev</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"Super professional, super responsive. Nainabh genuinely cares about your success — not just
+                delivering and disappearing. The product we launched together has become the core of how we operate.
+                Best tech partner we've worked with."</blockquote>
+              <div class="rev-result">
+                <strong>Core Product</strong>
+                <span>built and shipped on time, no scope creep</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar">AV</div>
+                <div>
+                  <strong>Arjun Verma</strong>
+                  <span>Co-founder, BuildFlow SaaS — Bengaluru</span>
+                </div>
+                <a href="contact.html?project=saas-web" class="rev-project-link">Similar Project →</a>
+              </div>
+            </div>
+
+            <!-- 10 · Velour Salon · FEATURED -->
+            <div class="review-card tm-review-featured" id="review-velour" data-rev="web" style="grid-column: span 2;">
+              <div class="rev-card-meta">
+                <span class="rev-source">Web Project</span>
+                <span class="rev-industry">Beauty & Wellness · Web Dev</span>
+                <span class="rev-verified" style="margin-left:auto;">Verified Client</span>
+              </div>
+              <div class="stars">★★★★★</div>
+              <blockquote>"Our old website was costing us bookings every single day — it looked dated, loaded slowly,
+                and had no online booking at all. Within three weeks of the new site going live, we were getting 15–20
+                online appointments daily without lifting a finger. The design captures exactly the premium feel we
+                wanted. Clients regularly tell us the website made them choose us over competitors before they'd even
+                walked through the door."</blockquote>
+              <div class="rev-result">
+                <strong>15–20 Bookings/Day</strong>
+                <span>fully automated — zero manual calls</span>
+              </div>
+              <div class="reviewer">
+                <div class="rev-avatar">SR</div>
+                <div>
+                  <strong>Simran Relan</strong>
+                  <span>Owner, Velour Salon & Spa — Chandigarh</span>
+                </div>
+                <a href="contact.html?project=salon-web" class="rev-cta-btn">Get This Result →</a>
+              </div>
+            </div>
+
+          </div><!-- /reviews-grid -->
+        </div>
+      </section>
+    </div>
+
+    <!-- ══════ CASE STUDIES PANEL ══════ -->
+    <div class="testi-panel" id="panel-case-studies">
+
+      <div class="tm-cs-row tm-cs-row--flip fade-up" id="cs-wrkout-world">
+        <div class="tm-cs-bg-num">150%</div>
+        <div class="container">
+          <div class="tm-cs-inner">
+            <div class="tm-cs-left">
+              <div class="tm-cs-eyebrow"><span class="cs-industry">Gym Website · Conversion Focused</span></div>
+              <h2>Wrkout World<br /><span class="accent">Landing Page</span></h2>
+              <p>Turning a local gym into the top-ranking result in the city — 150% more organic walk-ins and 2×
+                revenue, in under 2 months.</p>
+              <div class="tm-cs-results">
+                <div class="tm-cs-stat"><strong>+150%</strong><span>Daily Walk-Ins</span></div>
+                <div class="tm-cs-stat"><strong>#1</strong><span>Google Ranking</span></div>
+                <div class="tm-cs-stat"><strong>0.4s</strong><span>Load Time</span></div>
+                <div class="tm-cs-stat"><strong>2 mo.</strong><span>To Results</span></div>
+              </div>
+              <div class="tm-cs-ba" id="ba-0">
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">Losing<br />Leads</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar pk" data-w="90"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after pk">Auto Capturing</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">No Online<br />Presence</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar gr" data-w="100"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after gr">Strong SEO</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">Daily<br />Walk-Ins</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar" data-w="80"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after">+150%<br />After</span>
+                </div>
+              </div>
+              <div class="tm-cs-timeline">Audit → Full Results: 2 months</div>
+              <div class="tm-cs-cta-row">
+                <a href="contact.html?project=wrkout-world" class="btn btn-primary">Get This Result →</a>
+                <a href="portfolio.html" class="btn btn-outline">View in Portfolio</a>
+                <span class="tm-cs-cta-note">Conversion Focused Website · Any industry</span>
+              </div>
+            </div>
+            <div class="tm-cs-right">
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">The Problem</div>
+                <p>No online presence beyond a bare Google Business Profile. Entirely reliant on word-of-mouth
+                  referrals. Paid ads redirecting to a dead end, zero SEO foundation. Competitors owned every first-page
+                  result.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Our Solution</div>
+                <p>Full custom website built from scratch with an online payment interface for memberships, local
+                  keyword strategy with intent mapping, Google Business Profile optimisation, location-based schema
+                  markup, and monthly content.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Stack Used</div>
+                <p>WordPress · Custom Theme · Razorpay · GA4 · Google Search Console · Google Business Profile</p>
+              </div>
+              <div class="tm-cs-block" style="border-top:2px solid rgba(124,58,237,.3);">
+                <div class="tm-cs-block-label" style="color:var(--lavender);">Client's Words</div>
+                <p style="font-style:italic;color:var(--text);">"We went from zero online presence to fully booked
+                  walk-in slots within two months. New members are finding us on Google every single day — and we
+                  haven't spent a rupee on ads."</p>
+                <div style="margin-top:10px;font-family:var(--font-head);font-size:.78rem;color:var(--muted);">— Charu
+                  Chandra, Owner · Wrkout World</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tm-cs-row fade-up" id="cs-kumarkart">
+        <div class="tm-cs-bg-num">2×</div>
+        <div class="container">
+          <div class="tm-cs-inner">
+            <div class="tm-cs-left">
+              <div class="tm-cs-eyebrow"><span class="cs-industry">E-Commerce · Web Dev</span></div>
+              <h2>KumarKart<br /><span class="accent">Fashion Platform</span></h2>
+              <p>From an outdated static site to a high-converting e-commerce experience that doubled monthly revenue in
+                under 60 days — with no ad spend.</p>
+              <div class="tm-cs-results">
+                <div class="tm-cs-stat"><strong>2×</strong><span>Monthly Revenue</span></div>
+                <div class="tm-cs-stat"><strong>↓62%</strong><span>Bounce Rate</span></div>
+                <div class="tm-cs-stat"><strong>3.5×</strong><span>Organic Traffic</span></div>
+                <div class="tm-cs-stat"><strong>6 wks</strong><span>Delivered</span></div>
+              </div>
+              <div class="tm-cs-ba" id="ba-1">
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">78%<br />Bounce Rate</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar pk" data-w="78"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after pk">16%<br />After</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">₹0<br />Online Sales</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar gr" data-w="100"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after gr">2× Revenue<br />After</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">28s<br />Avg. Session</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar" data-w="85"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after">3m 40s<br />After</span>
+                </div>
+              </div>
+              <div class="tm-cs-timeline">Audit → Launch: 6 weeks</div>
+              <div class="tm-cs-cta-row">
+                <a href="contact.html?project=fashion-ecommerce" class="btn btn-primary">Get This Result →</a>
+                <a href="portfolio.html" class="btn btn-outline">View in Portfolio</a>
+                <span class="tm-cs-cta-note">Free consultation · No commitment</span>
+              </div>
+            </div>
+            <div class="tm-cs-right">
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">The Problem</div>
+                <p>KumarKart had no online sales capability — a 78% bounce rate and sessions under 30 seconds. Losing
+                  customers to better-presented competitors every single day, with no way to measure or improve it.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Our Solution</div>
+                <p>Custom WooCommerce store with advanced product filtering, streamlined Razorpay checkout, mobile-first
+                  design, and full SEO setup on launch day. Every decision tested against the goal: more revenue per
+                  visitor.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Stack Used</div>
+                <p>WordPress · WooCommerce · PHP · Razorpay API · GA4 · Cloudflare CDN</p>
+              </div>
+              <div class="tm-cs-block" style="border-top:2px solid rgba(124,58,237,.3);">
+                <div class="tm-cs-block-label" style="color:var(--lavender);">Client's Words</div>
+                <p style="font-style:italic;color:var(--text);">"Best investment we made for our business. The website
+                  is fast, stunning, and our leads doubled within 60 days of launch."</p>
+                <div style="margin-top:10px;font-family:var(--font-head);font-size:.78rem;color:var(--muted);">— Rajesh
+                  Kumar, Founder · KumarKart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sdiv"></div>
+
+      <div class="tm-cs-row tm-cs-row--flip fade-up" id="cs-healthfirst">
+        <div class="tm-cs-bg-num">300%</div>
+        <div class="container">
+          <div class="tm-cs-inner">
+            <div class="tm-cs-left">
+              <div class="tm-cs-eyebrow"><span class="cs-industry">Healthcare · Local SEO</span></div>
+              <h2>HealthFirst<br /><span class="accent">Clinic SEO</span></h2>
+              <p>Turning an invisible clinic website into the top-ranking result in the city — 300% more organic
+                appointment bookings, no paid ads, in 4 months.</p>
+              <div class="tm-cs-results">
+                <div class="tm-cs-stat"><strong>+300%</strong><span>Organic Bookings</span></div>
+                <div class="tm-cs-stat"><strong>#1</strong><span>Google Ranking</span></div>
+                <div class="tm-cs-stat"><strong>1.4s</strong><span>Load Time</span></div>
+                <div class="tm-cs-stat"><strong>4 mo.</strong><span>To Results</span></div>
+              </div>
+              <div class="tm-cs-ba" id="ba-2">
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">7s<br />Load Time</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar pk" data-w="90"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after pk">1.4s<br />After</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">Page 3<br />Google</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar gr" data-w="100"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after gr">Rank #1<br />After</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">Baseline<br />Bookings</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar" data-w="80"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after">+300%<br />After</span>
+                </div>
+              </div>
+              <div class="tm-cs-timeline">Audit → Full Results: 4 months</div>
+              <div class="tm-cs-cta-row">
+                <a href="contact.html?project=healthcare-seo" class="btn btn-primary">Get This Result →</a>
+                <a href="portfolio.html" class="btn btn-outline">View in Portfolio</a>
+                <span class="tm-cs-cta-note">Local SEO · Any industry</span>
+              </div>
+            </div>
+            <div class="tm-cs-right">
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">The Problem</div>
+                <p>Zero organic visibility — page 3–4 for all key terms. Entirely reliant on word-of-mouth referrals.
+                  Site loading at 7 seconds, failing Core Web Vitals. Competitors owned every first-page result.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Our Solution</div>
+                <p>Full technical SEO audit, site speed overhaul (7s → 1.4s), local keyword strategy with intent
+                  mapping, Google Business Profile optimisation, location-based schema markup, and monthly content.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Stack Used</div>
+                <p>Technical SEO audit · Core Web Vitals overhaul · Google Business Profile · Schema markup · GA4 ·
+                  Search Console · Monthly content</p>
+              </div>
+              <div class="tm-cs-block" style="border-top:2px solid rgba(124,58,237,.3);">
+                <div class="tm-cs-block-label" style="color:var(--lavender);">Client's Words</div>
+                <p style="font-style:italic;color:var(--text);">"I honestly didn't believe SEO could move this fast.
+                  Within four months we were fully booked two weeks in advance, driven entirely by organic search. The
+                  ROI has been extraordinary."</p>
+                <div style="margin-top:10px;font-family:var(--font-head);font-size:.78rem;color:var(--muted);">— Dr.
+                  Anil Mehta, Director · HealthFirst</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sdiv"></div>
+
+      <div class="tm-cs-row fade-up" id="cs-spiceroute">
+        <div class="tm-cs-bg-num">4.8★</div>
+        <div class="container">
+          <div class="tm-cs-inner">
+            <div class="tm-cs-left">
+              <div class="tm-cs-eyebrow"><span class="cs-industry">F&amp;B · Mobile App</span></div>
+              <h2>SpiceRoute<br /><span class="pink">Restaurant App</span></h2>
+              <p>A mobile ordering experience that turned one-time customers into regulars — and put 28% of lost
+                commission revenue directly back into the owner's pocket.</p>
+              <div class="tm-cs-results">
+                <div class="tm-cs-stat"><strong>↓28%</strong><span>Commission Saved</span></div>
+                <div class="tm-cs-stat"><strong>40%</strong><span>Repeat Order Rate</span></div>
+                <div class="tm-cs-stat"><strong>4.8★</strong><span>App Store</span></div>
+                <div class="tm-cs-stat"><strong>8 wks</strong><span>Delivered</span></div>
+              </div>
+              <div class="tm-cs-ba" id="ba-3">
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">28%<br />Commission Lost</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar pk" data-w="28"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after pk">0%<br />Direct Orders</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">Low<br />Retention</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar gr" data-w="40"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after gr">40%<br />Repeat Rate</span>
+                </div>
+                <div class="tm-cs-ba-row">
+                  <span class="tm-cs-ba-label">No<br />Loyalty Data</span>
+                  <div class="tm-cs-ba-bar-wrap">
+                    <div class="tm-cs-ba-bar" data-w="70"></div>
+                  </div>
+                  <span class="tm-cs-ba-label after">Full<br />CRM Now</span>
+                </div>
+              </div>
+              <div class="tm-cs-timeline">Design → App Store: 8 weeks</div>
+              <div class="tm-cs-cta-row">
+                <a href="contact.html?project=restaurant-app" class="btn btn-primary">Get This Result →</a>
+                <a href="portfolio.html" class="btn btn-outline">View in Portfolio</a>
+                <span class="tm-cs-cta-note">iOS + Android · Any food business</span>
+              </div>
+            </div>
+            <div class="tm-cs-right">
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">The Problem</div>
+                <p>Losing 28% of every order to third-party platforms charging 25–30% commission. No direct customer
+                  relationship, no loyalty data, and no way to run promotions without paying Zomato or Swiggy.</p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Our Solution</div>
+                <p>Cross-platform app (iOS + Android) with real-time order tracking, push notification marketing,
+                  points-based loyalty rewards, and a live owner dashboard for menu, orders and analytics — all in one.
+                </p>
+              </div>
+              <div class="tm-cs-block">
+                <div class="tm-cs-block-label">Stack Used</div>
+                <p>React Native · Node.js · Firebase · Razorpay · Custom admin web panel · OneSignal push notifications
+                </p>
+              </div>
+              <div class="tm-cs-block" style="border-top:2px solid rgba(236,72,153,.3);">
+                <div class="tm-cs-block-label" style="color:var(--pink);">Client's Words</div>
+                <p style="font-style:italic;color:var(--text);">"Commission savings alone paid for the entire project
+                  within 3 months. The app has become central to how we operate every day."</p>
+                <div style="margin-top:10px;font-family:var(--font-head);font-size:.78rem;color:var(--muted);">— Priya
+                  Sharma, Owner · SpiceRoute</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding-bottom:48px;"></div>
+    </div>
+
+    <div class="sdiv"></div>
+
+    <!-- ══════ CTA ══════ -->
+    <section class="c-cta" id="section-cta">
+      <div class="container">
+        <div class="c-cta-inner fade-up">
+          <div class="c-cta-grid">
+            <div>
+              <div class="tag">Your Story, Next</div>
+              <h2>Ready to Become<br /><span class="accent">Our Next Case Study?</span></h2>
+              <p>Every one of these results started with a free conversation. Tell us what you're trying to achieve —
+                we'll show you exactly how we'd get you there, with a fixed price and timeline you can hold us to.</p>
+            </div>
+            <div class="c-cta-actions">
+              <a href="contact.html" class="btn btn-primary">Start a Conversation →</a>
+              <a href="pricing.html" class="btn btn-outline">Chose your Plan →</a>
+              <span class="c-cta-note">Free consultation · Reply within 24 hrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Logo" />
+            <span class="logo-text">NP <span class="logo-accent">Trigunayat</span> Systems</span>
+          </a>
+          <p>A boutique web &amp; mobile development agency helping startups and businesses build exceptional digital
+            products.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Web Design &amp; Dev</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">SEO &amp; Performance</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 NP Trigunayat Systems. All rights reserved.</span>
+        <div class="footer-bottom-right">
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span class="footer-bottom-sep">·</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="footer-bottom-sep">·</span>
+          <span>Made with ♥ in India 🇮🇳</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="sources/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!document.getElementById('tm-eyebrow')) return;
+
+      /* ── Hero staggered reveal ── */
+      setTimeout(() => document.getElementById('tm-eyebrow')?.classList.add('in'), 100);
+      setTimeout(() => document.getElementById('tm-hl0')?.classList.add('in'), 280);
+      setTimeout(() => document.getElementById('tm-hl1')?.classList.add('in'), 450);
+      setTimeout(() => document.getElementById('tm-hl2')?.classList.add('in'), 610);
+      setTimeout(() => document.getElementById('tm-sub')?.classList.add('in'), 780);
+      setTimeout(() => document.getElementById('tm-meta')?.classList.add('in'), 920);
+      setTimeout(() => document.getElementById('tm-quote')?.classList.add('in'), 950);
+
+      /* ── Build metrics marquee ── */
+      const metrics = [
+        { num: '2×', label: 'Revenue\nDoubled', pk: false },
+        { num: '+300%', label: 'Organic\nBookings', pk: true },
+        { num: '4.8★', label: 'App Store\nRating', pk: false },
+        { num: '28%', label: 'Commission\nSavings', pk: true },
+        { num: 'Rank #1', label: 'Google\nIn 4 Months', pk: false },
+        { num: '40%', label: 'Repeat\nOrder Rate', pk: true },
+        { num: '6 Wks', label: 'E-Commerce\nDelivered', pk: false },
+        { num: '0', label: 'Downtime\n18 Months', pk: true },
+        { num: '↓62%', label: 'Bounce\nRate Drop', pk: false },
+        { num: '1.4s', label: 'Page Load\nAfter SEO', pk: true },
+      ];
+      const track = document.getElementById('tm-metrics-track');
+      if (track) {
+        [1, 2].forEach(() => {
+          metrics.forEach(m => {
+            const el = document.createElement('div');
+            el.className = 'tm-metric-chip';
+            el.innerHTML = `<div><div class="tm-chip-num${m.pk ? ' pk' : ''}">${m.num}</div><div class="tm-chip-label">${m.label.replace('\n', '<br>')}</div></div><div class="tm-chip-sep"></div>`;
+            track.appendChild(el);
+          });
+        });
+      }
+
+      /* ══════════════════════════════════════════════════
+         TRUE MASONRY — CSS grid-auto-rows:1px + JS spans
+         Cards flow LEFT-TO-RIGHT (unlike CSS columns)
+      ══════════════════════════════════════════════════ */
+      function runMasonry() {
+        const grid = document.getElementById('reviews-grid');
+        if (!grid) return;
+        /* On mobile we let it be single-column normal flow */
+        if (window.innerWidth < 640) {
+          grid.querySelectorAll('.review-card').forEach(c => {
+            c.style.gridRowEnd = '';
+            c.style.gridColumn = '';
+          });
+          return;
+        }
+        /* grid-auto-rows: 1px, row-gap: 0 — each row is exactly 1px.
+           Span = card height + bottom margin (20px) so cards sit flush. */
+        const MARGIN = 20;
+        grid.querySelectorAll('.review-card').forEach(card => {
+          card.style.gridRowEnd = ''; /* reset first */
+          const h = card.getBoundingClientRect().height;
+          const span = Math.ceil(h + MARGIN);
+          card.style.gridRowEnd = `span ${span}`;
+        });
+      }
+
+      /* Run after fonts/images settle — longer delay ensures accurate height reads */
+      document.fonts.ready.then(() => setTimeout(runMasonry, 60));
+      setTimeout(runMasonry, 400); /* fallback in case fonts.ready fires early */
+      window.addEventListener('resize', debounce(runMasonry, 180));
+
+      /* Re-run after filter changes — hooked into filterReviews below */
+      window._masonryRun = runMasonry;
+
+      /* ── Card staggered reveal on scroll ── */
+      const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            const delay = parseInt(entry.target.dataset.delay || 0);
+            setTimeout(() => entry.target.classList.add('card-visible'), delay);
+            cardObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      document.querySelectorAll('#reviews-grid .review-card').forEach((card, i) => {
+        card.dataset.delay = (i % 3) * 80; /* stagger by column position */
+        cardObserver.observe(card);
+      });
+
+      /* ── Animate Before/After bars on scroll ── */
+      const barObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.tm-cs-ba-bar').forEach(bar => {
+              bar.style.width = (bar.dataset.w || 80) + '%';
+            });
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      document.querySelectorAll('.tm-cs-ba').forEach(el => barObserver.observe(el));
+    });
+
+    /* ── Simple debounce ── */
+    function debounce(fn, ms) {
+      let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
+    }
+
+    /* ── Tab switcher ── */
+    function switchTestiTab(btn, panel) {
+      document.querySelectorAll('.tm-tab-btn').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.testi-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('panel-' + panel).classList.add('active');
+      history.replaceState(null, '', '#panel-' + panel);
+      /* Re-run masonry in case panel was hidden on init */
+      if (panel === 'reviews') setTimeout(() => window._masonryRun?.(), 60);
+    }
+
+    /* ── Review filter ── */
+    function filterReviews(btn, cat) {
+      document.querySelectorAll('.tm-rev-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const cards = document.querySelectorAll('#reviews-grid .review-card');
+      cards.forEach(card => {
+        const show = cat === 'all' || (card.dataset.rev || '').includes(cat);
+        card.style.display = show ? '' : 'none';
+        /* Re-animate visible cards */
+        if (show) {
+          card.classList.remove('card-visible');
+          setTimeout(() => card.classList.add('card-visible'), 40);
+        }
+      });
+      /* Recompute masonry spans after filter */
+      setTimeout(() => window._masonryRun?.(), 80);
+    }
+
+    /* ── Deep-link ── */
+    (function deepLink() {
+      const hash = window.location.hash;
+      if (!hash) return;
+      let panelId = null, targetId = null;
+      if (hash === '#panel-reviews' || hash.startsWith('#review-')) {
+        panelId = 'reviews';
+        targetId = hash.startsWith('#review-') ? hash.slice(1) : null;
+      } else if (hash === '#panel-case-studies' || hash.startsWith('#cs-')) {
+        panelId = 'case-studies';
+        targetId = hash.startsWith('#cs-') ? hash.slice(1) : null;
+      }
+      if (!panelId) return;
+      const btnIndex = panelId === 'case-studies' ? 1 : 0;
+      const tabBtns = document.querySelectorAll('.tm-tab-btn');
+      document.querySelectorAll('.testi-panel').forEach(p => p.classList.remove('active'));
+      tabBtns.forEach(t => t.classList.remove('active'));
+      if (tabBtns[btnIndex]) tabBtns[btnIndex].classList.add('active');
+      document.getElementById('panel-' + panelId)?.classList.add('active');
+      if (targetId) {
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            const el = document.getElementById(targetId);
+            if (!el) return;
+            const navH = document.getElementById('navbar')?.offsetHeight ?? 70;
+            window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - navH - 24, behavior: 'smooth' });
+            el.style.transition = 'box-shadow .35s ease';
+            el.style.boxShadow = '0 0 0 2px var(--lavender, #a78bfa), 0 0 36px rgba(124,58,237,.32)';
+            setTimeout(() => { el.style.boxShadow = ''; }, 2200);
+          }, 180);
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
