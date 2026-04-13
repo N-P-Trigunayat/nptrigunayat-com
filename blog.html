@@ -2,11 +2,66 @@
 <html lang="en">
 
 <head>
+  <!-- ═══════════════════════════════════════════════════════════════════
+       CORE META
+       ═══════════════════════════════════════════════════════════════════ -->
   <meta charset="UTF-8" />
-  <meta name="description"
-    content="Practical guides on web development, mobile apps, SEO, and digital growth — written from real projects by NP Trigunayat Systems, Lucknow." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — NP Trigunayat Systems</title>
+
+  <!-- Primary SEO -->
+  <title>Web Dev, Mobile &amp; SEO Blog | NP Trigunayat Systems</title>
+  <meta name="description"
+    content="Practical web dev, mobile &amp; SEO guides from real Indian business projects. Honest, field-tested advice from NP Trigunayat Systems, Lucknow. No sponsored posts." />
+  <meta name="keywords"
+    content="web development blog India, SEO guides India, mobile app development tips, website cost India, WordPress vs custom development, Core Web Vitals India, local SEO Lucknow, React Native Flutter comparison, Indian business website, web dev tips Lucknow" />
+  <meta name="author" content="Nainabh Prakash Trigunayat" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://nptrigunayat.com/blog.html" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       GEO & LOCAL SEO
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India" />
+  <meta name="geo.position" content="26.8467;80.9462" />
+  <meta name="ICBM" content="26.8467, 80.9462" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       OPEN GRAPH — Facebook, LinkedIn, WhatsApp, Telegram
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NP Trigunayat Systems" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:url" content="https://nptrigunayat.com/blog.html" />
+  <meta property="og:title" content="Web Dev, Mobile &amp; SEO Blog | NP Trigunayat Systems" />
+  <meta property="og:description"
+    content="Practical web dev, mobile &amp; SEO guides from real Indian business projects. Honest, field-tested advice from NP Trigunayat Systems, Lucknow. No sponsored posts." />
+  <meta property="og:image" content="https://nptrigunayat.com/assets/og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://nptrigunayat.com/assets/og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NP Trigunayat Systems — Web Dev, Mobile &amp; SEO Blog for Indian Businesses" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       TWITTER / X CARD
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Web Dev, Mobile &amp; SEO Blog | NP Trigunayat Systems" />
+  <meta name="twitter:description"
+    content="Practical web dev, mobile &amp; SEO guides from real Indian business projects. Honest, field-tested advice from NP Trigunayat Systems, Lucknow. No sponsored posts." />
+  <meta name="twitter:image" content="https://nptrigunayat.com/assets/og-image.jpg" />
+  <meta name="twitter:image:alt" content="NP Trigunayat Systems — Web Dev, Mobile &amp; SEO Blog for Indian Businesses" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       BROWSER / PWA
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="theme-color" content="#7c3aed" />
+  <meta name="msapplication-TileColor" content="#7c3aed" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FONTS & STYLES
+       ═══════════════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,13 +69,316 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="sources/style.css" />
 
-  <!-- Favicon -->
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FAVICON
+       ═══════════════════════════════════════════════════════════════════ -->
   <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-  <!-- Favicon End -->
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- 1 · Blog — content hub entity, wires into the site graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://nptrigunayat.com/blog.html#blog",
+    "name": "NP Trigunayat Systems — Tech Insights Journal",
+    "description": "Practical guides on web development, mobile apps, SEO, and digital growth — written from real projects by NP Trigunayat Systems, Lucknow. No sponsored posts. No recycled fluff.",
+    "url": "https://nptrigunayat.com/blog.html",
+    "inLanguage": "en-IN",
+    "image": "https://nptrigunayat.com/assets/og-image.jpg",
+    "author": {
+      "@type": "Person",
+      "@id": "https://nptrigunayat.com/about.html#founder",
+      "name": "Nainabh Prakash Trigunayat",
+      "url": "https://nptrigunayat.com/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/nptrigunayat/",
+        "https://github.com/N-P-Trigunayat",
+        "https://x.com/nptrigunayat"
+      ]
+    },
+    "publisher": {
+      "@id": "https://nptrigunayat.com/#organization"
+    },
+    "isPartOf": {
+      "@id": "https://nptrigunayat.com/#website"
+    },
+    "breadcrumb": {
+      "@id": "https://nptrigunayat.com/blog.html#breadcrumb"
+    }
+  }
+  </script>
+
+  <!-- 2 · ItemList of BlogPosting — one entry per published article -->
+  <!-- Signals individual articles to Google for indexing, authorship, -->
+  <!-- freshness, and article-type rich results.                        -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://nptrigunayat.com/blog.html#article-list",
+    "name": "Articles — NP Trigunayat Systems Blog",
+    "description": "All published articles on web development, mobile apps, SEO, and digital business growth.",
+    "numberOfItems": 7,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/website-cost-india.html#article",
+          "headline": "How Much Does a Website Cost in India in 2025?",
+          "description": "The real numbers — from a ₹5,000 template to a ₹2,00,000+ custom build. What you actually get at each price point, and where most businesses go wrong when budgeting for their first website.",
+          "url": "https://nptrigunayat.com/blog/website-cost-india.html",
+          "datePublished": "2025-01-12",
+          "dateModified": "2025-01-12",
+          "articleSection": "Web Development",
+          "keywords": "website cost India 2025, website development price India, how much does a website cost India, web design pricing Lucknow",
+          "timeRequired": "PT8M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/wordpress-vs-custom.html#article",
+          "headline": "WordPress vs Custom Code — What Should You Actually Build On?",
+          "description": "The honest framework for making the right call based on your budget, timeline, and what the site actually needs to do.",
+          "url": "https://nptrigunayat.com/blog/wordpress-vs-custom.html",
+          "datePublished": "2025-01-28",
+          "dateModified": "2025-01-28",
+          "articleSection": "Web Development",
+          "keywords": "WordPress vs custom development, WordPress vs React India, website platform comparison, CMS vs custom code India",
+          "timeRequired": "PT6M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/google-maps-seo.html#article",
+          "headline": "Why Your Local Business Isn't Showing Up on Google Maps",
+          "description": "Your competitor three streets away shows up first. These four fixes change that — no agency required.",
+          "url": "https://nptrigunayat.com/blog/google-maps-seo.html",
+          "datePublished": "2025-02-03",
+          "dateModified": "2025-02-03",
+          "articleSection": "SEO",
+          "keywords": "local business Google Maps ranking, Google Maps SEO India, Google My Business optimisation Lucknow, local SEO India",
+          "timeRequired": "PT5M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/react-native-vs-flutter.html#article",
+          "headline": "React Native vs Flutter in 2025 — Which One for Your Budget?",
+          "description": "Both cross-platform. Both capable. The decision comes down to three things — and budget is only one of them.",
+          "url": "https://nptrigunayat.com/blog/react-native-vs-flutter.html",
+          "datePublished": "2025-02-14",
+          "dateModified": "2025-02-14",
+          "articleSection": "Mobile Apps",
+          "keywords": "React Native vs Flutter 2025, cross-platform app development India, mobile app framework comparison, Flutter developer India, React Native developer India",
+          "timeRequired": "PT7M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/kumarkart-case-study.html#article",
+          "headline": "Why KumarKart's Revenue Doubled in 60 Days After a Website Rebuild",
+          "description": "A full teardown of what changed, why it worked, and what any e-commerce business can steal from this project.",
+          "url": "https://nptrigunayat.com/blog/kumarkart-case-study.html",
+          "datePublished": "2025-03-01",
+          "dateModified": "2025-03-01",
+          "articleSection": "Business",
+          "keywords": "e-commerce website rebuild India, WooCommerce revenue growth, website conversion optimisation India, e-commerce case study India",
+          "timeRequired": "PT4M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/core-web-vitals.html#article",
+          "headline": "Core Web Vitals in 2025 — The Only Guide You Need for Indian Websites",
+          "description": "LCP, CLS, FID explained — plus the exact fixes that moved a clinic website from 7s to 1.4s load time.",
+          "url": "https://nptrigunayat.com/blog/core-web-vitals.html",
+          "datePublished": "2025-03-10",
+          "dateModified": "2025-03-10",
+          "articleSection": "SEO",
+          "keywords": "Core Web Vitals India 2025, LCP improvement, page speed optimisation India, website performance India, CLS FID fix",
+          "timeRequired": "PT9M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/indian-business-website-mistakes.html#article",
+          "headline": "The 5 Things That Make Indian Business Websites Lose Customers",
+          "description": "After auditing dozens of Indian SMB sites, the same five mistakes surface every time. Here's the list — and the fix.",
+          "url": "https://nptrigunayat.com/blog/indian-business-website-mistakes.html",
+          "datePublished": "2025-03-22",
+          "dateModified": "2025-03-22",
+          "articleSection": "Web Development",
+          "keywords": "Indian business website mistakes, SMB website audit India, website conversion problems India, web design mistakes India",
+          "timeRequired": "PT5M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-image.jpg",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- 3 · BreadcrumbList — Home › Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://nptrigunayat.com/blog.html#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nptrigunayat.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://nptrigunayat.com/blog.html"
+      }
+    ]
+  }
+  </script>
 
   <style>
     /* ══════════════════════════════════════════════════════════════
