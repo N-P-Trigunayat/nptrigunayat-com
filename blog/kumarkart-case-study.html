@@ -2,11 +2,73 @@
 <html lang="en">
 
 <head>
+  <!-- ═══════════════════════════════════════════════════════════════════
+       CORE META
+       ═══════════════════════════════════════════════════════════════════ -->
   <meta charset="UTF-8" />
-  <meta name="description"
-    content="A full teardown of what we changed on KumarKart, why it worked, and what any e-commerce business can steal from this project. Revenue doubled in 60 days." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Why KumarKart's Revenue Doubled in 60 Days After a Website Rebuild — NP Trigunayat Systems</title>
+
+  <!-- Primary SEO -->
+  <title>KumarKart Case Study: Revenue Doubled in 60 Days | NP Trigunayat Systems</title>
+  <meta name="description"
+    content="8.2s load time. 0.8% conversion rate. 68% cart abandonment. We rebuilt this Lucknow WooCommerce store from scratch — and revenue doubled in 60 days. Full breakdown of every change." />
+  <meta name="keywords"
+    content="e-commerce website rebuild India, WooCommerce conversion optimisation India, cart abandonment fix India, KumarKart case study, website speed conversion rate India, e-commerce case study Lucknow" />
+  <meta name="author" content="Nainabh Prakash Trigunayat" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://nptrigunayat.com/blog/kumarkart-case-study.html" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       GEO & LOCAL SEO
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India" />
+  <meta name="geo.position" content="26.8467;80.9462" />
+  <meta name="ICBM" content="26.8467, 80.9462" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       OPEN GRAPH — Facebook, LinkedIn, WhatsApp, Telegram
+       og:title uses the full descriptive version (not display-length constrained)
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="NP Trigunayat Systems" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:url" content="https://nptrigunayat.com/blog/kumarkart-case-study.html" />
+  <meta property="og:title" content="Why KumarKart Revenue Doubled in 60 Days After a Website Rebuild | NP Trigunayat Systems" />
+  <meta property="og:description"
+    content="8.2s load time. 0.8% conversion rate. 68% cart abandonment. We rebuilt this Lucknow WooCommerce store from scratch — and revenue doubled in 60 days. Full breakdown of every change." />
+  <meta property="og:image" content="https://nptrigunayat.com/assets/og-images/blog-pages/kumarkart-cs-og.png" />
+  <meta property="og:image:secure_url" content="https://nptrigunayat.com/assets/og-images/blog-pages/kumarkart-cs-og.png" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NP Trigunayat Systems — Boutique Web &amp; Mobile Development Agency, Lucknow" />
+  <meta property="article:published_time" content="2025-03-01T00:00:00+05:30" />
+  <meta property="article:modified_time" content="2025-03-01T00:00:00+05:30" />
+  <meta property="article:author" content="https://www.linkedin.com/in/nptrigunayat/" />
+  <meta property="article:section" content="Business" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       TWITTER / X CARD
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why KumarKart Revenue Doubled in 60 Days After a Website Rebuild | NP Trigunayat Systems" />
+  <meta name="twitter:description"
+    content="8.2s load time. 0.8% conversion rate. 68% cart abandonment. We rebuilt this Lucknow WooCommerce store from scratch — and revenue doubled in 60 days. Full breakdown of every change." />
+  <meta name="twitter:image" content="https://nptrigunayat.com/assets/og-images/blog-pages/kumarkart-cs-og.png" />
+  <meta name="twitter:image:alt" content="NP Trigunayat Systems — Boutique Web &amp; Mobile Development Agency, Lucknow" />
+  <meta name="twitter:label1" content="Reading time" />
+  <meta name="twitter:data1" content="6 min read" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       BROWSER / PWA
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="theme-color" content="#7c3aed" />
+  <meta name="msapplication-TileColor" content="#7c3aed" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FONTS & STYLES
+       ═══════════════════════════════════════════════════════════════════ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,13 +76,127 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="../sources/style.css" />
 
-  <!-- Favicon -->
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FAVICON
+       ═══════════════════════════════════════════════════════════════════ -->
   <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="../assets/favicon/site.webmanifest" />
-  <!-- Favicon End -->
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- 1 · BlogPosting — full article schema, mirrors the ItemList entry in blog.html -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://nptrigunayat.com/blog/kumarkart-case-study.html#article",
+    "headline": "Why KumarKart Revenue Doubled in 60 Days After a Website Rebuild",
+    "description": "A full teardown of what changed, why it worked, and what any e-commerce business can steal from this project.",
+    "url": "https://nptrigunayat.com/blog/kumarkart-case-study.html",
+    "datePublished": "2025-03-01",
+    "dateModified": "2025-03-01",
+    "articleSection": "Business",
+    "keywords": "e-commerce website rebuild India, WooCommerce conversion optimisation India, cart abandonment fix India, KumarKart case study, website speed conversion rate India, e-commerce case study Lucknow",
+    "timeRequired": "PT6M",
+    "inLanguage": "en-IN",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://nptrigunayat.com/assets/og-images/blog-pages/kumarkart-cs-og.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": {
+      "@type": "Person",
+      "@id": "https://nptrigunayat.com/about.html#founder",
+      "name": "Nainabh Prakash Trigunayat",
+      "url": "https://nptrigunayat.com/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/nptrigunayat/",
+        "https://github.com/N-P-Trigunayat",
+        "https://x.com/nptrigunayat"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://nptrigunayat.com/#organization",
+      "name": "NP Trigunayat Systems",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nptrigunayat.com/assets/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://nptrigunayat.com/blog/kumarkart-case-study.html"
+    },
+    "isPartOf": {
+      "@id": "https://nptrigunayat.com/blog.html#blog"
+    }
+  }
+  </script>
+
+  <!-- 2 · BreadcrumbList — Home > Blog > Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://nptrigunayat.com/blog/kumarkart-case-study.html#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nptrigunayat.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://nptrigunayat.com/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Why KumarKart Revenue Doubled in 60 Days After a Website Rebuild",
+        "item": "https://nptrigunayat.com/blog/kumarkart-case-study.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- 2 · BreadcrumbList — Home › Blog › Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://nptrigunayat.com/blog/kumarkart-case-study.html#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nptrigunayat.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://nptrigunayat.com/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Why KumarKart's Revenue Doubled in 60 Days After a Website Rebuild",
+        "item": "https://nptrigunayat.com/blog/kumarkart-case-study.html"
+      }
+    ]
+  }
+  </script>
 
   <style>
     /* ══════════════════════════════════════════════════════════
