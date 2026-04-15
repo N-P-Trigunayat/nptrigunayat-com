@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ═══════════════════════════════════════════════════════════════════
+       CORE META
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Web Dev, Mobile &amp; SEO Blog | NP Trigunayat Systems</title>
+  <meta name="description"
+    content="Practical web dev, mobile &amp; SEO guides from real Indian business projects. Honest, field-tested advice from NP Trigunayat Systems, Lucknow. No sponsored posts." />
+  <meta name="keywords"
+    content="web development blog India, SEO guides India, mobile app development tips, website cost India, WordPress vs custom development, Core Web Vitals India, local SEO Lucknow, React Native Flutter comparison, Indian business website, web dev tips Lucknow" />
+  <meta name="author" content="Nainabh Prakash Trigunayat" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://nptrigunayat.com/blog.html" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       GEO & LOCAL SEO
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN-UP" />
+  <meta name="geo.placename" content="Lucknow, Uttar Pradesh, India" />
+  <meta name="geo.position" content="26.8467;80.9462" />
+  <meta name="ICBM" content="26.8467, 80.9462" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       OPEN GRAPH — Facebook, LinkedIn, WhatsApp, Telegram
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NP Trigunayat Systems" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:url" content="https://nptrigunayat.com/blog.html" />
+  <meta property="og:title" content="Web Dev, Mobile &amp; SEO Blog | NP Trigunayat Systems" />
+  <meta property="og:description"
+    content="Practical web dev, mobile &amp; SEO guides from real Indian business projects. Honest, field-tested advice from NP Trigunayat Systems, Lucknow. No sponsored posts." />
+  <meta property="og:image" content="https://nptrigunayat.com/assets/og-images/main-pages/blog-og.png" />
+  <meta property="og:image:secure_url" content="https://nptrigunayat.com/assets/og-images/main-pages/blog-og.png" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NP Trigunayat Systems — Web Dev, Mobile &amp; SEO Blog for Indian Businesses" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       TWITTER / X CARD
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Web Dev, Mobile &amp; SEO Blog | NP Trigunayat Systems" />
+  <meta name="twitter:description"
+    content="Practical web dev, mobile &amp; SEO guides from real Indian business projects. Honest, field-tested advice from NP Trigunayat Systems, Lucknow. No sponsored posts." />
+  <meta name="twitter:image" content="https://nptrigunayat.com/assets/og-images/main-pages/blog-og.png" />
+  <meta name="twitter:image:alt" content="NP Trigunayat Systems — Web Dev, Mobile &amp; SEO Blog for Indian Businesses" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       BROWSER / PWA
+       ═══════════════════════════════════════════════════════════════════ -->
+  <meta name="theme-color" content="#7c3aed" />
+  <meta name="msapplication-TileColor" content="#7c3aed" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FONTS & STYLES
+       ═══════════════════════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="sources/style.css" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       FAVICON
+       ═══════════════════════════════════════════════════════════════════ -->
+  <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+       ═══════════════════════════════════════════════════════════════════ -->
+
+  <!-- 1 · Blog — content hub entity, wires into the site graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://nptrigunayat.com/blog.html#blog",
+    "name": "NP Trigunayat Systems — Tech Insights Journal",
+    "description": "Practical guides on web development, mobile apps, SEO, and digital growth — written from real projects by NP Trigunayat Systems, Lucknow. No sponsored posts. No recycled fluff.",
+    "url": "https://nptrigunayat.com/blog.html",
+    "inLanguage": "en-IN",
+    "image": "https://nptrigunayat.com/assets/og-images/main-pages/blog-og.png",
+    "author": {
+      "@type": "Person",
+      "@id": "https://nptrigunayat.com/about.html#founder",
+      "name": "Nainabh Prakash Trigunayat",
+      "url": "https://nptrigunayat.com/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/nptrigunayat/",
+        "https://github.com/N-P-Trigunayat",
+        "https://x.com/nptrigunayat"
+      ]
+    },
+    "publisher": {
+      "@id": "https://nptrigunayat.com/#organization"
+    },
+    "isPartOf": {
+      "@id": "https://nptrigunayat.com/#website"
+    },
+    "breadcrumb": {
+      "@id": "https://nptrigunayat.com/blog.html#breadcrumb"
+    }
+  }
+  </script>
+
+  <!-- 2 · ItemList of BlogPosting — one entry per published article -->
+  <!-- Signals individual articles to Google for indexing, authorship, -->
+  <!-- freshness, and article-type rich results.                        -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://nptrigunayat.com/blog.html#article-list",
+    "name": "Articles — NP Trigunayat Systems Blog",
+    "description": "All published articles on web development, mobile apps, SEO, and digital business growth.",
+    "numberOfItems": 7,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/website-cost-india.html#article",
+          "headline": "How Much Does a Website Cost in India in 2025?",
+          "description": "The real numbers — from a ₹5,000 template to a ₹2,00,000+ custom build. What you actually get at each price point, and where most businesses go wrong when budgeting for their first website.",
+          "url": "https://nptrigunayat.com/blog/website-cost-india.html",
+          "datePublished": "2025-01-12",
+          "dateModified": "2025-01-12",
+          "articleSection": "Web Development",
+          "keywords": "website cost India 2025, website development price India, how much does a website cost India, web design pricing Lucknow",
+          "timeRequired": "PT8M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-images/blog-pages/website-cost-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/wordpress-vs-custom.html#article",
+          "headline": "WordPress vs Custom Code — What Should You Actually Build On?",
+          "description": "The honest framework for making the right call based on your budget, timeline, and what the site actually needs to do.",
+          "url": "https://nptrigunayat.com/blog/wordpress-vs-custom.html",
+          "datePublished": "2025-01-28",
+          "dateModified": "2025-01-28",
+          "articleSection": "Web Development",
+          "keywords": "WordPress vs custom development, WordPress vs React India, website platform comparison, CMS vs custom code India",
+          "timeRequired": "PT6M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/blog-pages/wp-custom-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/google-maps-seo.html#article",
+          "headline": "Why Your Local Business Isn't Showing Up on Google Maps",
+          "description": "Your competitor three streets away shows up first. These four fixes change that — no agency required.",
+          "url": "https://nptrigunayat.com/blog/google-maps-seo.html",
+          "datePublished": "2025-02-03",
+          "dateModified": "2025-02-03",
+          "articleSection": "SEO",
+          "keywords": "local business Google Maps ranking, Google Maps SEO India, Google My Business optimisation Lucknow, local SEO India",
+          "timeRequired": "PT5M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-images/blog-pages/maps-seo-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/react-native-vs-flutter.html#article",
+          "headline": "React Native vs Flutter in 2025 — Which One for Your Budget?",
+          "description": "Both cross-platform. Both capable. The decision comes down to three things — and budget is only one of them.",
+          "url": "https://nptrigunayat.com/blog/react-native-vs-flutter.html",
+          "datePublished": "2025-02-14",
+          "dateModified": "2025-02-14",
+          "articleSection": "Mobile Apps",
+          "keywords": "React Native vs Flutter 2025, cross-platform app development India, mobile app framework comparison, Flutter developer India, React Native developer India",
+          "timeRequired": "PT7M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-images/blog-pages/react-flutter-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/kumarkart-case-study.html#article",
+          "headline": "Why KumarKart's Revenue Doubled in 60 Days After a Website Rebuild",
+          "description": "A full teardown of what changed, why it worked, and what any e-commerce business can steal from this project.",
+          "url": "https://nptrigunayat.com/blog/kumarkart-case-study.html",
+          "datePublished": "2025-03-01",
+          "dateModified": "2025-03-01",
+          "articleSection": "Business",
+          "keywords": "e-commerce website rebuild India, WooCommerce revenue growth, website conversion optimisation India, e-commerce case study India",
+          "timeRequired": "PT4M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-images/blog-pages/kumarkart-cs-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/core-web-vitals.html#article",
+          "headline": "Core Web Vitals in 2025 — The Only Guide You Need for Indian Websites",
+          "description": "LCP, CLS, FID explained — plus the exact fixes that moved a clinic website from 7s to 1.4s load time.",
+          "url": "https://nptrigunayat.com/blog/core-web-vitals.html",
+          "datePublished": "2025-03-10",
+          "dateModified": "2025-03-10",
+          "articleSection": "SEO",
+          "keywords": "Core Web Vitals India 2025, LCP improvement, page speed optimisation India, website performance India, CLS FID fix",
+          "timeRequired": "PT9M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-images/blog-pages/web-vitals-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "BlogPosting",
+          "@id": "https://nptrigunayat.com/blog/indian-business-website-mistakes.html#article",
+          "headline": "The 5 Things That Make Indian Business Websites Lose Customers",
+          "description": "After auditing dozens of Indian SMB sites, the same five mistakes surface every time. Here's the list — and the fix.",
+          "url": "https://nptrigunayat.com/blog/indian-business-website-mistakes.html",
+          "datePublished": "2025-03-22",
+          "dateModified": "2025-03-22",
+          "articleSection": "Web Development",
+          "keywords": "Indian business website mistakes, SMB website audit India, website conversion problems India, web design mistakes India",
+          "timeRequired": "PT5M",
+          "inLanguage": "en-IN",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://nptrigunayat.com/assets/og-images/blog-pages/indian-mistakes-og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "author": {
+            "@id": "https://nptrigunayat.com/about.html#founder"
+          },
+          "publisher": {
+            "@id": "https://nptrigunayat.com/#organization"
+          },
+          "isPartOf": {
+            "@id": "https://nptrigunayat.com/blog.html#blog"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- 3 · BreadcrumbList — Home › Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://nptrigunayat.com/blog.html#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://nptrigunayat.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://nptrigunayat.com/blog.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ══════════════════════════════════════════════════════════════
+   BLOG PAGE — DESIGN SYSTEM EXTENSION
+   Fully integrated with site CSS variables and shared class patterns.
+   Only new blog-specific classes defined here.
+══════════════════════════════════════════════════════════════ */
+
+    body {
+      overflow-x: hidden;
+    }
+
+    #page-blog {
+      overflow-x: hidden;
+      padding-top: var(--nav-h);
+    }
+
+    /* ─────────────────────────── HERO ─────────────────────────── */
+    .container.hero {
+      max-width: 1440px;
+    }
+
+    .bl-hero {
+      min-height: calc(100vh - var(--nav-h));
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 80px 0 80px;
+    }
+
+    .bl-hero-glow-a {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+      width: 900px;
+      height: 900px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 58, 237, .18) 0%, transparent 65%);
+      top: -220px;
+      right: -180px;
+      animation: glow-breathe 7s ease-in-out infinite;
+    }
+
+    .bl-hero-glow-b {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(236, 72, 153, .09) 0%, transparent 65%);
+      bottom: -100px;
+      left: -80px;
+      animation: glow-breathe 10s ease-in-out infinite reverse;
+    }
+
+    .bl-hero-scan {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      z-index: 0;
+      background: linear-gradient(90deg, transparent, rgba(124, 58, 237, .3), rgba(167, 139, 250, .5), rgba(124, 58, 237, .3), transparent);
+      animation: scanline 9s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .bl-hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .bl-hero-left {
+      min-width: 0;
+    }
+
+    /* Sub — animated in */
+    .bl-hero-sub {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 460px;
+      margin-bottom: 8px;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .bl-hero-sub.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Filter pills */
+    .bl-hero-cats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+
+    .bl-hero-cats.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Meta bar */
+    .bl-meta-bar {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      opacity: 0;
+      transition: opacity .6s ease 1.1s;
+    }
+
+    .bl-meta-bar.in {
+      opacity: 1;
+    }
+
+    .bl-meta-lbl {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .bl-meta-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--lavender);
+      box-shadow: 0 0 5px var(--lavender);
+      flex-shrink: 0;
+    }
+
+    .bl-meta-sep {
+      width: 1px;
+      height: 16px;
+      background: var(--border);
+    }
+
+    /* ── Hero right: featured card + floating badges ── */
+    .bl-hero-right {
+      position: relative;
+      opacity: 0;
+      transform: translateY(20px) scale(.97);
+      transition: opacity .8s ease .35s, transform .8s cubic-bezier(.22, 1, .36, 1) .35s;
+    }
+
+    .bl-hero-right.in {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Floating badges — same pattern as index.html */
+    .bl-fbadge {
+      position: absolute;
+      z-index: 10;
+      background: linear-gradient(145deg, rgba(20, 20, 37, .97), rgba(14, 14, 26, .97));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 10px 16px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+    }
+
+    .bl-fbadge--count {
+      top: -14px;
+      right: -20px;
+      border-color: rgba(124, 58, 237, .3);
+      animation: bl-float 5s ease-in-out 3s infinite;
+      white-space: nowrap;
+    }
+
+    .bl-fbadge--quote {
+      bottom: -14px;
+      left: -24px;
+      border-color: rgba(236, 72, 153, .25);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      white-space: normal;
+      max-width: 220px;
+      animation: bl-float 5s ease-in-out 1.5s infinite;
+    }
+
+    @keyframes bl-float {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-7px)
+      }
+    }
+
+    .bl-fb-num {
+      font-family: var(--font-head);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--lavender);
+      line-height: 1;
+    }
+
+    .bl-fb-lbl {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .bl-fb-lbl--gr {
+      color: #34d399;
+    }
+
+    .bl-fb-lbl--lv {
+      color: var(--lavender);
+    }
+
+    .bl-fb-lbl--pk {
+      color: var(--pink);
+    }
+
+    .bl-fb-sub {
+      font-size: .72rem;
+      color: var(--muted);
+    }
+
+    .bl-fb-stars {
+      color: #FBBF24;
+      font-size: .74rem;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    .bl-fb-quote {
+      font-size: .72rem;
+      color: var(--text);
+      line-height: 1.45;
+      font-style: italic;
+    }
+
+    .bl-fb-by {
+      font-family: var(--font-head);
+      font-size: .6rem;
+      font-weight: 700;
+      color: var(--pink);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .bl-fb-livedot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 8px #34d399;
+      flex-shrink: 0;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    /* ── Hero feature card ── */
+    .bl-hcard {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      background: linear-gradient(145deg, rgba(20, 20, 37, .97), rgba(14, 14, 26, .97));
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      transition: border-color .3s, box-shadow .3s, transform .3s ease;
+    }
+
+    .bl-hcard::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--purple), var(--pink), var(--orange));
+      opacity: .7;
+      transition: opacity .3s;
+      z-index: 3;
+      border-radius: 22px 22px 0 0;
+    }
+
+    .bl-hcard:hover {
+      transform: translateY(-6px);
+      border-color: rgba(167, 139, 250, .4);
+      box-shadow: 0 20px 60px rgba(124, 58, 237, .18);
+    }
+
+    .bl-hcard:hover::before {
+      opacity: 1;
+    }
+
+    .bl-hcard-thumb {
+      height: 220px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(124, 58, 237, .2), rgba(14, 14, 26, .9));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bl-hcard-emoji {
+      font-size: 4rem;
+      line-height: 1;
+      display: block;
+      transition: transform .4s cubic-bezier(.34, 1.56, .64, 1);
+    }
+
+    .bl-hcard:hover .bl-hcard-emoji {
+      transform: scale(1.15) rotate(-8deg);
+    }
+
+    .bl-hcard-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, rgba(14, 14, 26, .8));
+    }
+
+    .bl-hcard-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      font-family: var(--font-head);
+      font-size: .6rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: rgba(52, 211, 153, .2);
+      border: 1px solid rgba(52, 211, 153, .4);
+      color: #34d399;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bl-hcard-badge-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 6px #34d399;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    .bl-hcard-body {
+      padding: 24px 28px 28px;
+    }
+
+    .bl-hcard-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .bl-hcard-body h3 {
+      font-family: var(--font-head);
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1.35;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .bl-hcard-body p {
+      font-size: .875rem;
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    .bl-hcard-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .bl-hcard-date {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .bl-hcard-read {
+      font-family: var(--font-head);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--lavender);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: gap .2s;
+    }
+
+    .bl-hcard:hover .bl-hcard-read {
+      gap: 9px;
+    }
+
+    /* ───────────────── FILTER NAV ───────────────── */
+    .bl-filter-nav {
+      position: sticky;
+      top: var(--nav-h);
+      z-index: 90;
+      background: rgba(7, 7, 15, .94);
+      backdrop-filter: blur(22px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bl-filter-inner {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .bl-filter-inner::-webkit-scrollbar {
+      display: none;
+    }
+
+    .bl-filter-btn {
+      flex-shrink: 0;
+      padding: 18px 24px;
+      font-family: var(--font-head);
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 2px solid transparent;
+      transition: all .25s;
+      white-space: nowrap;
+    }
+
+    .bl-filter-btn:hover {
+      color: var(--text);
+    }
+
+    .bl-filter-btn.active {
+      color: var(--lavender);
+      border-bottom-color: var(--lavender);
+    }
+
+    .bl-filter-btn.active[onclick*="'web'"] {
+      color: var(--lavender);
+      border-bottom-color: var(--lavender);
+    }
+
+    .bl-filter-btn.active[onclick*="'mobile'"] {
+      color: var(--pink);
+      border-bottom-color: var(--pink);
+    }
+
+    .bl-filter-btn.active[onclick*="'seo'"] {
+      color: var(--orange);
+      border-bottom-color: var(--orange);
+    }
+
+    .bl-filter-btn.active[onclick*="'business'"] {
+      color: #34d399;
+      border-bottom-color: #34d399;
+    }
+
+    .bl-filter-pill {
+      font-family: var(--font-head);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      transition: all .2s;
+    }
+
+    .bl-filter-pill:hover {
+      border-color: var(--border-hi);
+      color: var(--lavender);
+    }
+
+    .bl-filter-pill.active {
+      background: rgba(124, 58, 237, .15);
+      border-color: var(--border-hi);
+      color: var(--lavender);
+    }
+
+    .bl-filter-count {
+      display: inline-block;
+      background: rgba(124, 58, 237, .12);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 1px 8px;
+      font-size: .62rem;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+
+    .bl-filter-btn.active .bl-filter-count {
+      background: rgba(124, 58, 237, .28);
+      border-color: var(--border-hi);
+    }
+
+    /* ─────────────── ARTICLE GRID ─────────────── */
+    .bl-grid-section {
+      padding: 72px 0 88px;
+    }
+
+    .bl-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    /* Cards */
+    .bl-card {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: linear-gradient(145deg, rgba(20, 20, 37, .97), rgba(14, 14, 26, .97));
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      transition: border-color .3s, box-shadow .28s, transform .28s ease;
+    }
+
+    .bl-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      opacity: 0;
+      transition: opacity .3s;
+      z-index: 2;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .bl-card[data-cat="web"]::before {
+      background: linear-gradient(90deg, var(--purple), var(--lavender));
+    }
+
+    .bl-card[data-cat="mobile"]::before {
+      background: linear-gradient(90deg, var(--pink), var(--orange));
+    }
+
+    .bl-card[data-cat="seo"]::before {
+      background: linear-gradient(90deg, var(--orange), var(--pink));
+    }
+
+    .bl-card[data-cat="business"]::before {
+      background: linear-gradient(90deg, #34d399, var(--lavender));
+    }
+
+    .bl-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .bl-card:hover::before {
+      opacity: 1;
+    }
+
+    .bl-card[data-cat="web"]:hover {
+      border-color: rgba(124, 58, 237, .45);
+      box-shadow: 0 14px 42px rgba(124, 58, 237, .14);
+    }
+
+    .bl-card[data-cat="mobile"]:hover {
+      border-color: rgba(236, 72, 153, .45);
+      box-shadow: 0 14px 42px rgba(236, 72, 153, .14);
+    }
+
+    .bl-card[data-cat="seo"]:hover {
+      border-color: rgba(249, 115, 22, .4);
+      box-shadow: 0 14px 42px rgba(249, 115, 22, .12);
+    }
+
+    .bl-card[data-cat="business"]:hover {
+      border-color: rgba(52, 211, 153, .4);
+      box-shadow: 0 14px 42px rgba(52, 211, 153, .11);
+    }
+
+    /* Thumb */
+    .bl-thumb {
+      height: 160px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bl-card[data-cat="web"] .bl-thumb {
+      background: linear-gradient(135deg, rgba(124, 58, 237, .2), rgba(14, 14, 26, .85));
+    }
+
+    .bl-card[data-cat="mobile"] .bl-thumb {
+      background: linear-gradient(135deg, rgba(236, 72, 153, .18), rgba(14, 14, 26, .85));
+    }
+
+    .bl-card[data-cat="seo"] .bl-thumb {
+      background: linear-gradient(135deg, rgba(249, 115, 22, .18), rgba(14, 14, 26, .85));
+    }
+
+    .bl-card[data-cat="business"] .bl-thumb {
+      background: linear-gradient(135deg, rgba(52, 211, 153, .16), rgba(14, 14, 26, .85));
+    }
+
+    .bl-thumb-emoji {
+      font-size: 2.8rem;
+      line-height: 1;
+      display: block;
+      transition: transform .35s cubic-bezier(.34, 1.56, .64, 1);
+    }
+
+    .bl-card:hover .bl-thumb-emoji {
+      transform: scale(1.15) rotate(-8deg);
+    }
+
+    .bl-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, rgba(14, 14, 26, .7));
+    }
+
+    /* Card body */
+    .bl-body {
+      padding: 20px 22px 24px;
+    }
+
+    .bl-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .bl-cat-tag {
+      font-family: var(--font-head);
+      font-size: .58rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+      border: 1px solid;
+    }
+
+    .bl-cat--web {
+      background: rgba(124, 58, 237, .12);
+      border-color: rgba(124, 58, 237, .3);
+      color: var(--lavender);
+    }
+
+    .bl-cat--mobile {
+      background: rgba(236, 72, 153, .1);
+      border-color: rgba(236, 72, 153, .28);
+      color: var(--pink);
+    }
+
+    .bl-cat--seo {
+      background: rgba(249, 115, 22, .1);
+      border-color: rgba(249, 115, 22, .28);
+      color: var(--orange);
+    }
+
+    .bl-cat--business {
+      background: rgba(52, 211, 153, .08);
+      border-color: rgba(52, 211, 153, .28);
+      color: #34d399;
+    }
+
+    .bl-read-time {
+      font-family: var(--font-head);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .bl-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .bl-body p {
+      font-size: .835rem;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .bl-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .bl-date {
+      font-family: var(--font-head);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .bl-read-more {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color .2s;
+    }
+
+    .bl-card[data-cat="web"]:hover .bl-read-more {
+      color: var(--lavender);
+    }
+
+    .bl-card[data-cat="mobile"]:hover .bl-read-more {
+      color: var(--pink);
+    }
+
+    .bl-card[data-cat="seo"]:hover .bl-read-more {
+      color: var(--orange);
+    }
+
+    .bl-card[data-cat="business"]:hover .bl-read-more {
+      color: #34d399;
+    }
+
+    /* Wide featured card */
+    .bl-card--wide {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      margin-bottom: 22px;
+      border-radius: 20px;
+    }
+
+    .bl-thumb--wide {
+      height: auto;
+      min-height: 220px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    .bl-body--wide {
+      padding: 32px 36px;
+    }
+
+    .bl-body--wide h2 {
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .bl-body--wide p {
+      font-size: .95rem;
+      margin-bottom: 24px;
+    }
+
+    .bl-wide-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 3;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    /* ─────────────── DIRECT CONTACT STRIP ─────────────── */
+    .bl-direct {
+      background: rgba(14, 14, 26, .65);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bl-direct::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(124, 58, 237, .08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .bl-direct-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 48px;
+      align-items: center;
+      padding: 60px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bl-direct-ey {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--pink);
+      margin-bottom: 14px;
+    }
+
+    .bl-direct-ey::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: var(--pink);
+      border-radius: 2px;
+    }
+
+    .bl-direct-inner h2 {
+      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .bl-direct-inner p {
+      font-size: .95rem;
+      max-width: 500px;
+    }
+
+    .bl-direct-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+      flex-shrink: 0;
+      min-width: 220px;
+    }
+
+    .bl-direct-note {
+      font-size: .75rem;
+      color: var(--muted);
+      text-align: right;
+      line-height: 1.6;
+    }
+
+    /* WhatsApp button */
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: var(--font-head);
+      font-size: .875rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      padding: 13px 28px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(37, 211, 102, .2);
+      transition: all .25s ease;
+    }
+
+    .btn-wa:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 36px rgba(37, 211, 102, .35);
+    }
+
+    /* ─────────────── TOPIC GUIDE ─────────────── */
+    .bl-topics {
+      padding: 88px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bl-topics::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 60%, rgba(124, 58, 237, .06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .bl-topics-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: end;
+      margin-bottom: 48px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bl-topics-head h2 {
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+    }
+
+    .bl-topics-head p {
+      font-size: 1rem;
+      max-width: 360px;
+      padding-bottom: 4px;
+    }
+
+    .bl-topic-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bl-topic-card {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px 22px 22px;
+      background: linear-gradient(145deg, rgba(20, 20, 37, .97), rgba(14, 14, 26, .97));
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color .3s, box-shadow .3s, transform .28s ease;
+    }
+
+    .bl-topic-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      opacity: .5;
+      transition: opacity .3s;
+    }
+
+    .bl-topic-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .bl-topic-card:hover::before {
+      opacity: 1;
+    }
+
+    .bl-topic-card--web::before {
+      background: linear-gradient(90deg, var(--purple), var(--lavender));
+    }
+
+    .bl-topic-card--mobile::before {
+      background: linear-gradient(90deg, var(--pink), var(--orange));
+    }
+
+    .bl-topic-card--seo::before {
+      background: linear-gradient(90deg, var(--orange), var(--pink));
+    }
+
+    .bl-topic-card--business::before {
+      background: linear-gradient(90deg, #34d399, var(--lavender));
+    }
+
+    .bl-topic-card--web:hover {
+      border-color: rgba(124, 58, 237, .45);
+      box-shadow: 0 12px 36px rgba(124, 58, 237, .13);
+    }
+
+    .bl-topic-card--mobile:hover {
+      border-color: rgba(236, 72, 153, .45);
+      box-shadow: 0 12px 36px rgba(236, 72, 153, .13);
+    }
+
+    .bl-topic-card--seo:hover {
+      border-color: rgba(249, 115, 22, .4);
+      box-shadow: 0 12px 36px rgba(249, 115, 22, .11);
+    }
+
+    .bl-topic-card--business:hover {
+      border-color: rgba(52, 211, 153, .4);
+      box-shadow: 0 12px 36px rgba(52, 211, 153, .10);
+    }
+
+    .bl-topic-icon {
+      font-size: 1.7rem;
+      display: block;
+      margin-bottom: 14px;
+      line-height: 1;
+      transition: transform .35s cubic-bezier(.34, 1.56, .64, 1);
+    }
+
+    .bl-topic-card:hover .bl-topic-icon {
+      transform: scale(1.2) rotate(-8deg);
+    }
+
+    .bl-topic-cat {
+      font-family: var(--font-head);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .bl-topic-card--web .bl-topic-cat {
+      color: var(--lavender);
+    }
+
+    .bl-topic-card--mobile .bl-topic-cat {
+      color: var(--pink);
+    }
+
+    .bl-topic-card--seo .bl-topic-cat {
+      color: var(--orange);
+    }
+
+    .bl-topic-card--business .bl-topic-cat {
+      color: #34d399;
+    }
+
+    .bl-topic-title {
+      font-family: var(--font-head);
+      font-size: .95rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .bl-topic-desc {
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .bl-topic-count {
+      font-family: var(--font-head);
+      font-size: .62rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      opacity: .55;
+      transition: opacity .2s;
+    }
+
+    .bl-topic-card:hover .bl-topic-count {
+      opacity: 1;
+    }
+
+    .bl-topic-card--web .bl-topic-count {
+      color: var(--lavender);
+    }
+
+    .bl-topic-card--mobile .bl-topic-count {
+      color: var(--pink);
+    }
+
+    .bl-topic-card--seo .bl-topic-count {
+      color: var(--orange);
+    }
+
+    .bl-topic-card--business .bl-topic-count {
+      color: #34d399;
+    }
+
+    /* ─────────────── RESPONSIVE ─────────────── */
+    @media (max-width: 960px) {
+      .bl-hero {
+        padding: calc(var(--nav-h) + 40px) 0 56px;
+        min-height: auto;
+      }
+
+      .bl-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .bl-hero-right {
+        display: none;
+      }
+
+      .bl-topics-head {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .bl-topic-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .bl-direct-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .bl-direct-btns {
+        align-items: flex-start;
+      }
+
+      .bl-direct-note {
+        text-align: left;
+      }
+
+      .bl-card--wide {
+        grid-template-columns: 1fr;
+      }
+
+      .bl-thumb--wide {
+        min-height: 180px;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .bl-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 540px) {
+      .bl-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bl-topic-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="NP Trigunayat Systems Logo" />
+        <span class="logo-text">NP <span class="logo-accent">Trigunayat</span> Systems</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk →</a>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html" class="active-mobile">Blog</a>
+    <a href="contact.html" class="btn btn-primary mob-cta">Let's Talk →</a>
+  </div>
+
+  <div id="page-blog">
+
+    <!-- ════════════════════ HERO ════════════════════ -->
+    <section class="bl-hero">
+      <div class="bl-hero-glow-a"></div>
+      <div class="bl-hero-glow-b"></div>
+      <div class="bl-hero-scan"></div>
+      <div class="container hero">
+        <div class="bl-hero-inner">
+
+          <!-- Left -->
+          <div class="bl-hero-left">
+            <div class="c-eyebrow" id="bl-eyebrow">
+              <div class="c-eyebrow-dot"></div>
+              <span class="c-eyebrow-text">Written From the Field · Lucknow, India</span>
+              <div class="c-eyebrow-line"></div>
+            </div>
+            <h1 class="c-headline">
+              <span class="c-hl-row" id="bl-hl0"><span class="c-hl-inner">TECH</span></span>
+              <span class="c-hl-row" id="bl-hl1"><span class="c-hl-inner outline">INSIGHTS</span></span>
+              <span class="c-hl-row" id="bl-hl2"><span class="c-hl-inner grad">JOURNAL</span></span>
+            </h1>
+            <p class="bl-hero-sub" id="bl-sub">Practical guides on web, mobile, SEO, and digital growth — written by
+              someone who builds things for Indian businesses every single day. No recycled fluff. No sponsored posts.
+              Just what actually works.</p>
+            <div class="bl-hero-cats" id="bl-cats">
+              <button type="button" class="bl-filter-pill active" onclick="filterBlog(this,'all')">All Topics</button>
+              <button type="button" class="bl-filter-pill" onclick="filterBlog(this,'web')">Web Dev</button>
+              <button type="button" class="bl-filter-pill" onclick="filterBlog(this,'mobile')">Mobile</button>
+              <button type="button" class="bl-filter-pill" onclick="filterBlog(this,'seo')">SEO</button>
+              <button type="button" class="bl-filter-pill" onclick="filterBlog(this,'business')">Business</button>
+            </div>
+            <div class="bl-meta-bar" id="bl-metabar">
+              <span class="bl-meta-lbl"><span class="bl-meta-dot"></span>5+ Yrs Experience</span>
+              <div class="bl-meta-sep"></div>
+              <span class="bl-meta-lbl"><span class="bl-meta-dot"></span>50+ Projects Delivered</span>
+              <div class="bl-meta-sep"></div>
+              <span class="bl-meta-lbl"><span class="bl-meta-dot"></span>Zero Sponsored Posts</span>
+            </div>
+          </div>
+
+          <!-- Right: featured card + floating badges -->
+          <div class="bl-hero-right" id="bl-heroright">
+
+            <!-- Badge: article count -->
+            <div class="bl-fbadge bl-fbadge--count" id="bl-fb1">
+              <div class="bl-fb-num">7</div>
+              <div>
+                <div class="bl-fb-lbl bl-fb-lbl--lv">Articles</div>
+                <div class="bl-fb-sub">Published &amp; growing</div>
+              </div>
+            </div>
+
+            <!-- Badge: quote -->
+            <div class="bl-fbadge bl-fbadge--quote" id="bl-fb2">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div class="bl-fb-livedot"></div>
+                <div class="bl-fb-lbl bl-fb-lbl--gr">Real Client</div>
+              </div>
+              <div class="bl-fb-stars">★★★★★</div>
+              <div class="bl-fb-quote">"Explained it in plain language. Saved me from making a ₹60k mistake."</div>
+              <div class="bl-fb-by">Dr. Anil Mehta. · HealthFirst</div>
+            </div>
+
+            <!-- Hero article card -->
+            <a class="bl-hcard" href="blog/website-cost-india.html">
+              <div class="bl-hcard-thumb">
+                <span class="bl-hcard-emoji">💰</span>
+                <div class="bl-hcard-overlay"></div>
+                <div class="bl-hcard-badge">
+                  <div class="bl-hcard-badge-dot"></div>
+                  Latest Article
+                </div>
+              </div>
+              <div class="bl-hcard-body">
+                <div class="bl-hcard-meta">
+                  <span class="bl-cat-tag bl-cat--web">Web Dev</span>
+                  <span class="bl-read-time">8 min read</span>
+                </div>
+                <h3>How Much Does a Website Cost in India in 2025?</h3>
+                <p>The real numbers — from a ₹5,000 template to a ₹2,00,000+ custom build, and where most businesses go
+                  wrong.</p>
+                <div class="bl-hcard-footer">
+                  <span class="bl-hcard-date">Jan 12, 2025</span>
+                  <span class="bl-hcard-read">Read Article →</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ MARQUEE ════════════════════ -->
+    <div class="c-marquee">
+      <div class="c-marquee-track" id="marquee-track">
+        <span class="c-marquee-item">Web Development<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Mobile Apps<span class="m-dot"></span></span>
+        <span class="c-marquee-item">SEO &amp; Performance<span class="m-dot"></span></span>
+        <span class="c-marquee-item">Google Maps Ranking<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Core Web Vitals<span class="m-dot"></span></span>
+        <span class="c-marquee-item">WordPress vs Custom Code<span class="m-dot"></span></span>
+        <span class="c-marquee-item">React Native · Flutter<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Indian Business Growth<span class="m-dot"></span></span>
+        <span class="c-marquee-item">E-Commerce<span class="m-dot"></span></span>
+        <span class="c-marquee-item">Page Speed · LCP · CLS<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Local SEO · Lucknow<span class="m-dot"></span></span>
+        <span class="c-marquee-item">Website Pricing India<span class="m-dot"></span></span>
+        <!-- duplicate for seamless loop -->
+        <span class="c-marquee-item">Web Development<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Mobile Apps<span class="m-dot"></span></span>
+        <span class="c-marquee-item">SEO &amp; Performance<span class="m-dot"></span></span>
+        <span class="c-marquee-item">Google Maps Ranking<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Core Web Vitals<span class="m-dot"></span></span>
+        <span class="c-marquee-item">WordPress vs Custom Code<span class="m-dot"></span></span>
+        <span class="c-marquee-item">React Native · Flutter<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Indian Business Growth<span class="m-dot"></span></span>
+        <span class="c-marquee-item">E-Commerce<span class="m-dot"></span></span>
+        <span class="c-marquee-item">Page Speed · LCP · CLS<span class="m-dot"></span></span>
+        <span class="c-marquee-item hi">Local SEO · Lucknow<span class="m-dot"></span></span>
+        <span class="c-marquee-item">Website Pricing India<span class="m-dot"></span></span>
+      </div>
+    </div>
+
+    <!-- ════════════════════ STATS STRIP ════════════════════ -->
+    <!-- Reuses .c-stats, .c-stats-inner, .c-stat-col, .c-stat-num from shared CSS -->
+    <div class="c-stats" style="border-top:none;">
+      <div class="container">
+        <div class="c-stats-inner">
+          <div class="c-stat-col">
+            <span class="c-stat-num" data-target="7" data-suffix="">0</span>
+            <div class="c-stat-label">Articles Published</div>
+            <div class="c-stat-sub">Covering 4 core topics</div>
+          </div>
+          <div class="c-stat-col">
+            <span class="c-stat-num" data-target="5" data-suffix="+">0</span>
+            <div class="c-stat-label">Years Building</div>
+            <div class="c-stat-sub">Real products, real clients</div>
+          </div>
+          <div class="c-stat-col">
+            <span class="c-stat-num" data-target="30" data-suffix="+">0</span>
+            <div class="c-stat-label">Projects Delivered</div>
+            <div class="c-stat-sub">Across India</div>
+          </div>
+          <div class="c-stat-col">
+            <span class="c-stat-num" data-target="0" data-suffix="">0</span>
+            <div class="c-stat-label">Sponsored Posts</div>
+            <div class="c-stat-sub">Never. Not even once.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sdiv"></div>
+
+    <!-- ════════════════════ STICKY FILTER NAV ════════════════════ -->
+    <nav class="bl-filter-nav">
+      <div class="container">
+        <div class="bl-filter-inner">
+          <button type="button" class="bl-filter-btn active" onclick="filterBlog(this,'all')">All Posts <span
+              class="bl-filter-count">6</span></button>
+          <button type="button" class="bl-filter-btn" onclick="filterBlog(this,'web')">Web Dev <span
+              class="bl-filter-count">3</span></button>
+          <button type="button" class="bl-filter-btn" onclick="filterBlog(this,'mobile')">Mobile Apps <span
+              class="bl-filter-count">1</span></button>
+          <button type="button" class="bl-filter-btn" onclick="filterBlog(this,'seo')">SEO <span
+              class="bl-filter-count">2</span></button>
+          <button type="button" class="bl-filter-btn" onclick="filterBlog(this,'business')">Business <span
+              class="bl-filter-count">1</span></button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ════════════════════ ARTICLE GRID ════════════════════ -->
+    <section class="bl-grid-section" id="articles">
+      <div class="container">
+
+        <!-- Featured wide card -->
+        <a href="blog/website-cost-india.html" class="bl-card bl-card--wide fade-up" data-cat="web">
+          <div class="bl-thumb bl-thumb--wide">
+            <span class="bl-thumb-emoji" style="font-size:4rem;">💰</span>
+            <div class="bl-thumb-overlay"></div>
+            <div class="bl-wide-badge">
+              <span class="bl-cat-tag bl-cat--web">Web Dev</span>
+              <span class="bl-read-time">8 min read</span>
+            </div>
+          </div>
+          <div class="bl-body bl-body--wide">
+            <h2>How Much Does a Website Cost in India in 2025?</h2>
+            <p>The real numbers — from a ₹5,000 template to a ₹2,00,000+ custom build. What you actually get at each
+              price point, and where most businesses go wrong when budgeting for their first website.</p>
+            <div class="bl-card-footer">
+              <span class="bl-date">Jan 12, 2025</span>
+              <span class="bl-read-more">Read Full Article →</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3-col grid -->
+        <div class="bl-grid" id="blog-grid">
+
+          <a href="blog/wordpress-vs-custom.html" class="bl-card fade-up" data-cat="web">
+            <div class="bl-thumb"><span class="bl-thumb-emoji">🌐</span>
+              <div class="bl-thumb-overlay"></div>
+            </div>
+            <div class="bl-body">
+              <div class="bl-card-meta"><span class="bl-cat-tag bl-cat--web">Web Dev</span><span class="bl-read-time">6
+                  min read</span></div>
+              <h3>WordPress vs Custom Code — What Should You Actually Build On?</h3>
+              <p>The honest framework for making the right call based on your budget, timeline, and what the site
+                actually needs to do.</p>
+              <div class="bl-card-footer"><span class="bl-date">Jan 28, 2025</span><span class="bl-read-more">Read
+                  →</span></div>
+            </div>
+          </a>
+
+          <a href="blog/google-maps-seo.html" class="bl-card fade-up" data-cat="seo">
+            <div class="bl-thumb"><span class="bl-thumb-emoji">📍</span>
+              <div class="bl-thumb-overlay"></div>
+            </div>
+            <div class="bl-body">
+              <div class="bl-card-meta"><span class="bl-cat-tag bl-cat--seo">SEO</span><span class="bl-read-time">5 min
+                  read</span></div>
+              <h3>Why Your Local Business Isn't Showing Up on Google Maps</h3>
+              <p>Your competitor three streets away shows up first. These four fixes change that — no agency required.
+              </p>
+              <div class="bl-card-footer"><span class="bl-date">Feb 3, 2025</span><span class="bl-read-more">Read
+                  →</span></div>
+            </div>
+          </a>
+
+          <a href="blog/react-native-vs-flutter.html" class="bl-card fade-up" data-cat="mobile">
+            <div class="bl-thumb"><span class="bl-thumb-emoji">📱</span>
+              <div class="bl-thumb-overlay"></div>
+            </div>
+            <div class="bl-body">
+              <div class="bl-card-meta"><span class="bl-cat-tag bl-cat--mobile">Mobile Apps</span><span
+                  class="bl-read-time">7 min read</span></div>
+              <h3>React Native vs Flutter in 2025 — Which One for Your Budget?</h3>
+              <p>Both cross-platform. Both capable. The decision comes down to three things — and budget is only one of
+                them.</p>
+              <div class="bl-card-footer"><span class="bl-date">Feb 14, 2025</span><span class="bl-read-more">Read
+                  →</span></div>
+            </div>
+          </a>
+
+          <a href="blog/kumarkart-case-study.html" class="bl-card fade-up" data-cat="business">
+            <div class="bl-thumb"><span class="bl-thumb-emoji">🛒</span>
+              <div class="bl-thumb-overlay"></div>
+            </div>
+            <div class="bl-body">
+              <div class="bl-card-meta"><span class="bl-cat-tag bl-cat--business">Business</span><span
+                  class="bl-read-time">4 min read</span></div>
+              <h3>Why KumarKart's Revenue Doubled in 60 Days After a Website Rebuild</h3>
+              <p>A full teardown of what changed, why it worked, and what any e-commerce business can steal from this
+                project.</p>
+              <div class="bl-card-footer"><span class="bl-date">Mar 1, 2025</span><span class="bl-read-more">Read
+                  →</span></div>
+            </div>
+          </a>
+
+          <a href="blog/core-web-vitals.html" class="bl-card fade-up" data-cat="seo">
+            <div class="bl-thumb"><span class="bl-thumb-emoji">⚡</span>
+              <div class="bl-thumb-overlay"></div>
+            </div>
+            <div class="bl-body">
+              <div class="bl-card-meta"><span class="bl-cat-tag bl-cat--seo">SEO</span><span class="bl-read-time">9 min
+                  read</span></div>
+              <h3>Core Web Vitals in 2025 — The Only Guide You Need for Indian Websites</h3>
+              <p>LCP, CLS, FID explained — plus the exact fixes that moved a clinic website from 7s to 1.4s load time.
+              </p>
+              <div class="bl-card-footer"><span class="bl-date">Mar 10, 2025</span><span class="bl-read-more">Read
+                  →</span></div>
+            </div>
+          </a>
+
+          <a href="blog/indian-business-website-mistakes.html" class="bl-card fade-up" data-cat="web">
+            <div class="bl-thumb"><span class="bl-thumb-emoji">🎨</span>
+              <div class="bl-thumb-overlay"></div>
+            </div>
+            <div class="bl-body">
+              <div class="bl-card-meta"><span class="bl-cat-tag bl-cat--web">Web Dev</span><span class="bl-read-time">5
+                  min read</span></div>
+              <h3>The 5 Things That Make Indian Business Websites Lose Customers</h3>
+              <p>After auditing dozens of Indian SMB sites, the same five mistakes surface every time. Here's the list —
+                and the fix.</p>
+              <div class="bl-card-footer"><span class="bl-date">Mar 22, 2025</span><span class="bl-read-more">Read
+                  →</span></div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="sdiv"></div>
+
+    <!-- ════════════════════ DIRECT CONTACT STRIP ════════════════════ -->
+    <div class="bl-direct fade-up">
+      <div class="container">
+        <div class="bl-direct-inner">
+          <div>
+            <div class="bl-direct-ey">Skip the article queue</div>
+            <h2>Got a question a blog post<br />can't quite <span class="accent">answer?</span></h2>
+            <p>Send it directly. You'll get a real, specific answer within 24 hours — not a contact form confirmation,
+              not a newsletter prompt. An honest reply from the person who actually builds this stuff.</p>
+          </div>
+          <div class="bl-direct-btns">
+            <a href="https://wa.me/919506919515" target="_blank" rel="noopener" class="btn-wa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              WhatsApp Directly
+            </a>
+            <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Send a Message
+              →</a>
+            <span class="bl-direct-note">+91 95069 19515 · Replies within 24 hrs<br />No sales pitch. Just a straight
+              answer.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sdiv"></div>
+
+    <!-- ════════════════════ TOPIC GUIDE ════════════════════ -->
+    <section class="bl-topics">
+      <div class="container">
+        <div class="bl-topics-head fade-up">
+          <div>
+            <div class="tag" style="margin-bottom:16px;">Navigate by Topic</div>
+            <h2>Not sure where<br />to <span class="accent">start reading?</span></h2>
+          </div>
+          <p>Pick the category closest to your current challenge and jump straight to the articles most relevant to you.
+          </p>
+        </div>
+        <div class="bl-topic-grid fade-up">
+
+          <a href="#articles" class="bl-topic-card bl-topic-card--web" onclick="filterBlog(null,'web')">
+            <span class="bl-topic-icon">🌐</span>
+            <div class="bl-topic-cat">Web Dev</div>
+            <div class="bl-topic-title">Building or Rebuilding a Website</div>
+            <p class="bl-topic-desc">Pricing reality, platform choices, what to demand from your developer, and costly
+              mistakes to avoid.</p>
+            <div class="bl-topic-count">3 articles <span>→</span></div>
+          </a>
+
+          <a href="#articles" class="bl-topic-card bl-topic-card--mobile" onclick="filterBlog(null,'mobile')">
+            <span class="bl-topic-icon">📱</span>
+            <div class="bl-topic-cat">Mobile Apps</div>
+            <div class="bl-topic-title">Planning a Mobile App</div>
+            <p class="bl-topic-desc">Technology decisions, real budget ranges, and why most app projects fail before
+              they ship.</p>
+            <div class="bl-topic-count">1 article <span>→</span></div>
+          </a>
+
+          <a href="#articles" class="bl-topic-card bl-topic-card--seo" onclick="filterBlog(null,'seo')">
+            <span class="bl-topic-icon">📈</span>
+            <div class="bl-topic-cat">SEO</div>
+            <div class="bl-topic-title">Getting Found on Google</div>
+            <p class="bl-topic-desc">Local SEO, Core Web Vitals, Google Maps rankings — fixes for Indian businesses that
+              actually move the needle.</p>
+            <div class="bl-topic-count">2 articles <span>→</span></div>
+          </a>
+
+          <a href="#articles" class="bl-topic-card bl-topic-card--business" onclick="filterBlog(null,'business')">
+            <span class="bl-topic-icon">📊</span>
+            <div class="bl-topic-cat">Business</div>
+            <div class="bl-topic-title">Turning Your Site Into Revenue</div>
+            <p class="bl-topic-desc">Case studies and growth breakdowns — what actually moved the needle for real
+              businesses and why it worked.</p>
+            <div class="bl-topic-count">1 article <span>→</span></div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="sdiv"></div>
+
+    <!-- ════════════════════ CTA ════════════════════ -->
+    <section class="c-cta">
+      <div class="container">
+        <div class="c-cta-inner fade-up">
+          <div class="c-cta-grid">
+            <div>
+              <div class="tag" style="margin-bottom:18px;">Work Together</div>
+              <h2>Read Enough?<br /><span class="accent">Let's Actually Build Something.</span></h2>
+              <p style="margin-top:14px;max-width:480px;">If something here resonated, chances are we think the same way
+                about digital. That makes for a good project. Free consultation — honest advice, zero obligation, reply
+                within 24 hours.</p>
+              <div style="margin-top:24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;">
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <span style="color:var(--lavender);">✓</span>
+                  <span
+                    style="font-family:var(--font-head);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);">Reply
+                    within 24hrs</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <span style="color:var(--lavender);">✓</span>
+                  <span
+                    style="font-family:var(--font-head);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);">No
+                    commitment required</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;">
+                  <span style="color:var(--lavender);">✓</span>
+                  <span
+                    style="font-family:var(--font-head);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);">Fixed
+                    transparent pricing</span>
+                </div>
+              </div>
+            </div>
+            <div class="c-cta-actions">
+              <a href="contact.html" class="btn btn-primary">Get a Free Consultation →</a>
+              <a href="portfolio.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Our Work
+                →</a>
+              <span class="c-cta-note">Free Strategy Call · No-Obligation Quote</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-blog -->
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Logo" />
+            <span class="logo-text">NP <span class="logo-accent">Trigunayat</span> Systems</span>
+          </a>
+          <p>A boutique web &amp; mobile development agency helping startups and businesses build exceptional digital
+            products from Lucknow, India.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Web Design &amp; Dev</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">SEO &amp; Performance</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+          <h5 style="margin-top:20px;">Contact</h5>
+          <ul>
+            <li><a href="contact.html">Send a Message</a></li>
+            <li><a href="https://wa.me/919506919515" target="_blank" rel="noopener">WhatsApp Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 NP Trigunayat Systems. All rights reserved.</span>
+        <div class="footer-bottom-right">
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span class="footer-bottom-sep">·</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="footer-bottom-sep">·</span>
+          <span>Made with ♥ in India 🇮🇳</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="sources/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ── Hero staggered reveal (same pattern as all other pages) ── */
+      setTimeout(() => document.getElementById('bl-eyebrow')?.classList.add('in'), 100);
+      setTimeout(() => document.getElementById('bl-hl0')?.classList.add('in'), 280);
+      setTimeout(() => document.getElementById('bl-hl1')?.classList.add('in'), 450);
+      setTimeout(() => document.getElementById('bl-hl2')?.classList.add('in'), 620);
+      setTimeout(() => document.getElementById('bl-sub')?.classList.add('in'), 800);
+      setTimeout(() => document.getElementById('bl-cats')?.classList.add('in'), 960);
+      setTimeout(() => document.getElementById('bl-metabar')?.classList.add('in'), 1080);
+      setTimeout(() => document.getElementById('bl-heroright')?.classList.add('in'), 400);
+
+      /* ── Floating badges fade in (same pattern as index.html) ── */
+      ['bl-fb1', 'bl-fb2'].forEach((id, i) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.style.transition = `opacity .5s ease ${.9 + i * .2}s, transform .5s ease ${.9 + i * .2}s`;
+        el.style.transform = 'translateY(12px) scale(.95)';
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = '';
+        }, 50);
+      });
+
+      /* ── Grid cards stagger in on scroll ── */
+      const gridCards = document.querySelectorAll('#blog-grid .bl-card');
+      if (gridCards.length) {
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            const idx = [...gridCards].indexOf(e.target);
+            e.target.style.transition = 'opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .3s';
+            setTimeout(() => {
+              e.target.style.opacity = '1';
+              e.target.style.transform = 'translateY(0)';
+            }, (idx % 3) * 90);
+            obs.unobserve(e.target);
+          });
+        }, { threshold: 0.12 });
+        gridCards.forEach(c => {
+          c.style.opacity = '0';
+          c.style.transform = 'translateY(22px)';
+          obs.observe(c);
+        });
+      }
+
+      /* ── Topic cards stagger in on scroll ── */
+      const topicCards = document.querySelectorAll('.bl-topic-card');
+      if (topicCards.length) {
+        const obs2 = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            const idx = [...topicCards].indexOf(e.target);
+            setTimeout(() => {
+              e.target.style.transition = 'opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .3s';
+              e.target.style.opacity = '1';
+              e.target.style.transform = 'translateY(0)';
+            }, idx * 90);
+            obs2.unobserve(e.target);
+          });
+        }, { threshold: 0.1 });
+        topicCards.forEach(c => {
+          c.style.opacity = '0';
+          c.style.transform = 'translateY(22px)';
+          obs2.observe(c);
+        });
+      }
+
+    });
+
+    /* ── Blog filter — syncs sticky nav + hero pills ── */
+    function filterBlog(btn, cat) {
+      document.querySelectorAll('.bl-filter-btn, .bl-filter-pill').forEach(b => b.classList.remove('active'));
+      // Apply active to all matching buttons regardless of call source
+      document.querySelectorAll(`[onclick*="filterBlog(this,'${cat}')"], [onclick*="filterBlog(null,'${cat}')"]`).forEach(b => b.classList.add('active'));
+      // Also handle the 'all' case for buttons without a category match
+      if (cat === 'all') {
+        document.querySelectorAll(`[onclick*="filterBlog(this,'all')"]`).forEach(b => b.classList.add('active'));
+      }
+      document.querySelectorAll('#blog-grid .bl-card, .bl-card--wide').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+      });
+      if (!btn) {
+        setTimeout(() => document.getElementById('articles')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+      }
+    }
+  </script>
+</body>
+
+</html>

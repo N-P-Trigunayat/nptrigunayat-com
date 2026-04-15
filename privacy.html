@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Privacy Policy for NP Trigunayat Systems — how your data is collected, used, and protected when you visit our website or engage our services." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — NP Trigunayat Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="sources/style.css" />
+  <style>
+    #page-privacy {
+      padding-top: var(--nav-h);
+    }
+
+    .pp-hero {
+      position: relative;
+      overflow: hidden;
+      padding: calc(var(--nav-h) + 48px) 0 56px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pp-hero-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.12) 0%, transparent 65%);
+      top: -160px;
+      right: -120px;
+      pointer-events: none;
+      animation: glow-breathe 9s ease-in-out infinite;
+    }
+
+    .pp-hero-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .pp-hero-title {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .pp-hero-title span {
+      background: linear-gradient(100deg, var(--lavender), var(--pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .pp-hero-sub {
+      font-size: .9rem;
+      color: var(--muted);
+      max-width: 500px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .pp-hero-meta {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    .pp-meta-item {
+      font-family: var(--font-head);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .pp-meta-item span {
+      color: var(--lavender);
+    }
+
+    /* Body layout */
+    .pp-body {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 56px;
+      align-items: flex-start;
+      padding: 56px 0 96px;
+    }
+
+    /* TOC */
+    .pp-toc {
+      position: sticky;
+      top: calc(var(--nav-h) + 24px);
+      align-self: flex-start;
+    }
+
+    .pp-toc-label {
+      font-family: var(--font-head);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pp-toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .pp-toc-list a {
+      display: block;
+      font-family: var(--font-head);
+      font-size: .7rem;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 5px 10px 5px 12px;
+      border-left: 2px solid transparent;
+      line-height: 1.4;
+      transition: color .2s, border-color .2s;
+      text-decoration: none;
+    }
+
+    .pp-toc-list a:hover {
+      color: var(--lavender);
+      border-left-color: var(--border-hi);
+    }
+
+    .pp-toc-list a.active {
+      color: var(--lavender);
+      border-left-color: var(--lavender);
+    }
+
+    /* Content */
+    .pp-content {
+      min-width: 0;
+    }
+
+    .pp-intro-box {
+      font-size: .9rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 48px;
+      padding: 20px 24px;
+      background: rgba(124, 58, 237, .06);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .pp-section {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: calc(var(--nav-h) + 32px);
+    }
+
+    .pp-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .pp-section-num {
+      font-family: var(--font-head);
+      font-size: .65rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--lavender);
+      margin-bottom: 10px;
+    }
+
+    .pp-section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .pp-section h3 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 24px 0 10px;
+      font-family: var(--font-head);
+    }
+
+    .pp-section p {
+      font-size: .9rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+
+    .pp-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .pp-section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 12px 0 18px;
+      padding: 0;
+    }
+
+    .pp-section ul li {
+      display: flex;
+      gap: 12px;
+      font-size: .9rem;
+      color: var(--muted);
+      line-height: 1.75;
+      align-items: flex-start;
+    }
+
+    .pp-section ul li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--lavender);
+      box-shadow: 0 0 6px rgba(167, 139, 250, .4);
+      flex-shrink: 0;
+      margin-top: 9px;
+    }
+
+    /* Third-party service cards */
+    .pp-service-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .pp-service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      transition: border-color .25s;
+    }
+
+    .pp-service-card:hover {
+      border-color: var(--border-hi);
+    }
+
+    .pp-service-card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: .92rem;
+    }
+
+    .pp-service-card ul {
+      margin: 0;
+    }
+
+    .pp-service-card ul li {
+      font-size: .875rem;
+    }
+
+    .pp-strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .pp-link {
+      color: var(--lavender);
+      text-decoration: none;
+    }
+
+    .pp-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Rights grid */
+    .pp-rights-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .pp-right-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      transition: border-color .25s;
+    }
+
+    .pp-right-item:hover {
+      border-color: var(--border-hi);
+    }
+
+    .pp-right-name {
+      font-family: var(--font-head);
+      font-size: .8rem;
+      font-weight: 800;
+      color: var(--lavender);
+      margin-bottom: 6px;
+    }
+
+    .pp-right-desc {
+      font-size: .82rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* Callout */
+    .pp-callout {
+      display: flex;
+      gap: 14px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      margin: 20px 0;
+      align-items: flex-start;
+      background: rgba(124, 58, 237, 0.07);
+      border: 1px solid rgba(124, 58, 237, 0.22);
+    }
+
+    .pp-callout-icon {
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .pp-callout p {
+      font-size: .875rem;
+      margin: 0;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .pp-body {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .pp-toc {
+        display: none;
+      }
+
+      .pp-rights-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .pp-hero-meta {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="NP Trigunayat Systems Logo" />
+        <span class="logo-text">NP <span class="logo-accent">Trigunayat</span> Systems</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Let's Talk →</a>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" class="btn btn-primary mob-cta">Let's Talk →</a>
+  </div>
+
+  <div id="page-privacy">
+
+    <section class="pp-hero">
+      <div class="pp-hero-glow"></div>
+      <div class="container">
+        <div class="pp-hero-inner">
+          <div>
+            <div class="c-eyebrow" style="margin-bottom:20px;opacity:1;transform:none;">
+              <div class="c-eyebrow-dot"></div>
+              <span class="c-eyebrow-text">Legal &amp; Data</span>
+              <div class="c-eyebrow-line"></div>
+            </div>
+            <h1 class="pp-hero-title">Privacy <span>Policy</span></h1>
+            <p class="pp-hero-sub">How your data is collected, used, and protected when you visit our website or engage
+              our services.</p>
+          </div>
+          <div class="pp-hero-meta">
+            <div class="pp-meta-item">Effective <span>January 5, 2026</span></div>
+            <div class="pp-meta-item">Website <span>nptrigunayat.com</span></div>
+            <div class="pp-meta-item">Jurisdiction <span>Lucknow, India</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="pp-body">
+
+        <aside class="pp-toc">
+          <div class="pp-toc-label">Contents</div>
+          <ul class="pp-toc-list">
+            <li><a href="#s1">1. Information We Collect</a></li>
+            <li><a href="#s2">2. How We Use Your Data</a></li>
+            <li><a href="#s3">3. Third-Party Services</a></li>
+            <li><a href="#s4">4. Cookies and Tracking</a></li>
+            <li><a href="#s5">5. Data Retention &amp; Security</a></li>
+            <li><a href="#s6">6. Your Rights</a></li>
+            <li><a href="#s7">7. Children's Privacy</a></li>
+            <li><a href="#s8">8. Contact Us</a></li>
+          </ul>
+        </aside>
+
+        <div class="pp-content">
+
+          <div class="pp-intro-box">
+            <span class="pp-strong">Ravi Trigunayat</span> (acting as legal guardian of <span class="pp-strong">Nainabh
+              Prakash Trigunayat</span>, the "Operator") respects your privacy. This Privacy Policy outlines how your
+            data is collected, used, and protected when you visit our website or engage our services.<br /><br />
+            By using this website, submitting the contact form, or engaging our services, you consent to the practices
+            described in this policy.<br /><br />
+            <span class="pp-strong">Effective Date:</span> January 5, 2026 &nbsp;·&nbsp; <span
+              class="pp-strong">Website:</span> <a href="https://nptrigunayat.com"
+              class="pp-link">https://nptrigunayat.com</a>
+          </div>
+
+          <!-- ── 1 ── -->
+          <section class="pp-section" id="s1">
+            <div class="pp-section-num">Section 01</div>
+            <h2>Information We Collect</h2>
+
+            <h3>1.1. Information You Voluntarily Provide</h3>
+            <p>We collect information you directly provide when you fill out forms, request a quote, or contact us. This
+              includes:</p>
+            <ul>
+              <li><span class="pp-strong">Personal Identifiers:</span> Name, email address, and phone number.</li>
+              <li><span class="pp-strong">Project Details:</span> Selected service plan (e.g., "Starter," "Business"),
+                budget, and specific project requirements or messages you enter in the text fields.</li>
+              <li><span class="pp-strong">Communication:</span> Any correspondence sent via email or the contact form.
+              </li>
+            </ul>
+
+            <h3>1.2. Information Collected Automatically</h3>
+            <p>When you visit the website, we may automatically collect certain technical data, including:</p>
+            <ul>
+              <li><span class="pp-strong">Device Information:</span> Browser type, operating system, and device type
+                (mobile/desktop).</li>
+              <li><span class="pp-strong">Usage Data:</span> Pages visited, time spent on pages, and referral sources.
+              </li>
+              <li><span class="pp-strong">Technical Logs:</span> IP address and connection logs for security and
+                performance monitoring.</li>
+            </ul>
+          </section>
+
+          <!-- ── 2 ── -->
+          <section class="pp-section" id="s2">
+            <div class="pp-section-num">Section 02</div>
+            <h2>How We Use Your Data</h2>
+            <p>We use your data solely for legitimate business purposes:</p>
+            <ul>
+              <li><span class="pp-strong">Service Delivery:</span> To assess your project requirements, provide quotes,
+                and deliver web development services.</li>
+              <li><span class="pp-strong">Communication:</span> To respond to your inquiries, send proposals, and
+                provide project updates.</li>
+              <li><span class="pp-strong">Administrative:</span> To process invoices, manage records, and comply with
+                legal obligations.</li>
+              <li><span class="pp-strong">Security:</span> To protect the website from spam, abuse, and security
+                threats.</li>
+            </ul>
+          </section>
+
+          <!-- ── 3 ── -->
+          <section class="pp-section" id="s3">
+            <div class="pp-section-num">Section 03</div>
+            <h2>Third-Party Services &amp; Data Processors</h2>
+            <p>We utilize trusted third-party service providers to operate specific website functions. These providers
+              have their own privacy policies.</p>
+
+            <div class="pp-service-grid">
+
+              <div class="pp-service-card">
+                <h3>3.1. EmailJS (Form Processing)</h3>
+                <ul>
+                  <li><span class="pp-strong">Function:</span> We use <span class="pp-strong">EmailJS</span> to process
+                    and deliver the inquiries submitted through our contact form.</li>
+                  <li><span class="pp-strong">Data Shared:</span> Name, email, phone number, and message content entered
+                    in the form.</li>
+                  <li><span class="pp-strong">Purpose:</span> To securely transmit your message to our inbox and send
+                    you an automated confirmation receipt.</li>
+                  <li><span class="pp-strong">Privacy Policy:</span> EmailJS Privacy Policy</li>
+                </ul>
+              </div>
+
+              <div class="pp-service-card">
+                <h3>3.2. Hosting &amp; Infrastructure</h3>
+                <ul>
+                  <li><span class="pp-strong">Function:</span> Our website is hosted on third-party cloud infrastructure
+                    (e.g., Netlify/Vercel/GitHub Pages).</li>
+                  <li><span class="pp-strong">Data Shared:</span> IP addresses and access logs.</li>
+                  <li><span class="pp-strong">Purpose:</span> To ensure the website is accessible, secure, and fast.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="pp-service-card">
+                <h3>3.3. External Links</h3>
+                <ul>
+                  <li><span class="pp-strong">Social Media:</span> The website contains links to social media platforms
+                    (Instagram, LinkedIn, GitHub). Clicking these links may allow those platforms to collect data about
+                    you.</li>
+                  <li><span class="pp-strong">WhatsApp:</span> The "WhatsApp" button redirects you to the WhatsApp
+                    application. Your interaction with WhatsApp is governed by Meta's privacy policy.</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- ── 4 ── -->
+          <section class="pp-section" id="s4">
+            <div class="pp-section-num">Section 04</div>
+            <h2>Cookies and Tracking</h2>
+            <ul>
+              <li><span class="pp-strong">Functional Cookies:</span> The website may use local storage or session
+                cookies to enhance user experience (e.g., remembering scroll position or animation states).</li>
+              <li><span class="pp-strong">No Third-Party Tracking:</span> We do <span class="pp-strong">not</span>
+                currently use third-party advertising cookies or invasive tracking pixels (such as Facebook Pixel) on
+                this website.</li>
+              <li><span class="pp-strong">Control:</span> You can disable cookies in your browser settings at any time
+                without affecting the core functionality of the website.</li>
+            </ul>
+          </section>
+
+          <!-- ── 5 ── -->
+          <section class="pp-section" id="s5">
+            <div class="pp-section-num">Section 05</div>
+            <h2>Data Retention &amp; Security</h2>
+            <ul>
+              <li><span class="pp-strong">Security:</span> We implement standard security measures, including HTTPS
+                encryption, to protect data transmitted between your browser and our servers.</li>
+              <li><span class="pp-strong">Retention:</span> We retain your personal information only as long as
+                necessary to fulfill the purposes for which it was collected (e.g., completing a project) or to comply
+                with legal, tax, or accounting requirements.</li>
+              <li><span class="pp-strong">No Sale of Data:</span> We <span class="pp-strong">never</span> sell, rent, or
+                trade your personal information to third parties for marketing purposes.</li>
+            </ul>
+          </section>
+
+          <!-- ── 6 ── -->
+          <section class="pp-section" id="s6">
+            <div class="pp-section-num">Section 06</div>
+            <h2>Your Rights</h2>
+            <p>Under applicable Indian laws, you have the right to:</p>
+
+            <ul>
+              <li><span class="pp-strong">Access:</span> Request a copy of the personal data we hold about you.</li>
+              <li><span class="pp-strong">Correction:</span> Request correction of inaccurate or incomplete data.</li>
+              <li><span class="pp-strong">Deletion:</span> Request deletion of your personal data, subject to legal
+                retention obligations.</li>
+              <li><span class="pp-strong">Withdraw Consent:</span> Withdraw consent for future processing of your data.
+              </li>
+            </ul>
+
+            <div class="pp-callout">
+              <div class="pp-callout-icon">✉️</div>
+              <p>To exercise these rights, please contact us at <a href="mailto:hello@nptrigunayat.com"
+                  class="pp-link"><strong>hello@nptrigunayat.com</strong></a>.</p>
+            </div>
+          </section>
+
+          <!-- ── 7 ── -->
+          <section class="pp-section" id="s7">
+            <div class="pp-section-num">Section 07</div>
+            <h2>Children's Privacy</h2>
+            <p>Our services are intended for businesses and individuals over the age of 18. We do not knowingly collect
+              personal information from minors. If we discover that a minor has provided us with personal data, we will
+              delete it immediately.</p>
+          </section>
+
+          <!-- ── 8 ── -->
+          <section class="pp-section" id="s8">
+            <div class="pp-section-num">Section 08</div>
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our data practices, please contact:</p>
+            <ul>
+              <li><span class="pp-strong">Name:</span> Ravi Trigunayat (Legal Guardian)</li>
+              <li><span class="pp-strong">Email:</span> <a href="mailto:hello@nptrigunayat.com"
+                  class="pp-link">hello@nptrigunayat.com</a></li>
+              <li><span class="pp-strong">Phone:</span> +91 9506919515</li>
+              <li><span class="pp-strong">Location:</span> Lucknow, Uttar Pradesh, India</li>
+            </ul>
+          </section>
+
+        </div><!-- /pp-content -->
+      </div><!-- /pp-body -->
+    </div><!-- /container -->
+
+  </div><!-- /page-privacy -->
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Logo" />
+            <span class="logo-text">NP <span class="logo-accent">Trigunayat</span> Systems</span>
+          </a>
+          <p>A boutique web &amp; mobile development agency helping startups and businesses build exceptional digital
+            products.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+          <h5 style="margin-top:20px;">Services</h5>
+          <ul>
+            <li><a href="services.html">Web Design &amp; Dev</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">SEO &amp; Performance</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 NP Trigunayat Systems. All rights reserved.</span>
+        <div class="footer-bottom-right">
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <span class="footer-bottom-sep">·</span>
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="footer-bottom-sep">·</span>
+          <span>Made with ♥ in India 🇮🇳</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="sources/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.pp-section');
+      const links = document.querySelectorAll('.pp-toc-list a');
+      if (!sections.length || !links.length) return;
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            links.forEach(l => l.classList.remove('active'));
+            const a = document.querySelector(`.pp-toc-list a[href="#${e.target.id}"]`);
+            if (a) a.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+      sections.forEach(s => obs.observe(s));
+    });
+  </script>
+</body>
+
+</html>
