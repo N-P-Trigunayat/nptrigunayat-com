@@ -1,0 +1,14 @@
+# ============================================================
+# robots.txt — nptrigunayat.com
+# NP Trigunayat Systems
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# ── Do not index utility / system pages ──────────────────────
+Disallow: /thank-you.html
+Disallow: /404.html
+
+# ── Sitemap location ─────────────────────────────────────────
+Sitemap: https://nptrigunayat.com/sitemap.xml
