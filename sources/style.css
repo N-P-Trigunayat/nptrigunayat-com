@@ -7814,11 +7814,6 @@ footer {
     display: none;
   }
 
-  /* Nav logo text: hide on very small */
-  .nav-logo .logo-text {
-    display: none;
-  }
-
   .nav-logo img {
     width: 36px;
     height: 34px;
