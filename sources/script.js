@@ -12,26 +12,40 @@
 
 /* ── MOBILE MENU ── */
 function toggleMenu() {
-  document.getElementById("mobile-menu").classList.toggle("open");
+  const isOpen = document
+    .getElementById("mobile-menu")
+    .classList.toggle("open");
   document.getElementById("hamburger").classList.toggle("open");
+  document.getElementById("menu-overlay").classList.toggle("open");
+  document.getElementById("hamburger").setAttribute("aria-expanded", isOpen);
+  document.body.style.overflow = isOpen ? "hidden" : "";
 }
 
 function closeMenu() {
-  document.getElementById("mobile-menu").classList.remove("open");
-  document.getElementById("hamburger").classList.remove("open");
-}
-
-document.addEventListener("click", function (e) {
   const menu = document.getElementById("mobile-menu");
   const hamburger = document.getElementById("hamburger");
-  if (
-    menu &&
-    menu.classList.contains("open") &&
-    !menu.contains(e.target) &&
-    !hamburger.contains(e.target)
-  ) {
-    closeMenu();
-  }
+  const overlay = document.getElementById("menu-overlay");
+
+  menu.classList.remove("open");
+  overlay.classList.remove("open");
+  hamburger.classList.remove("open");
+  hamburger.setAttribute("aria-expanded", "false");
+  document.body.style.overflow = "";
+
+  // Reset link animations AFTER the drawer has fully slid out
+  menu.addEventListener("transitionend", function reset() {
+    menu.querySelectorAll(".mob-nav a").forEach((a) => {
+      a.style.animation = "none";
+      a.offsetHeight;
+      a.style.animation = "";
+    });
+    menu.removeEventListener("transitionend", reset);
+  });
+}
+
+// Close on Escape key
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeMenu();
 });
 
 /* ── PORTFOLIO FILTER ── */
